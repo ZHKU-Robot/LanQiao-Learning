@@ -76,5 +76,5 @@ int reverse(int x)
 }
 int main()
 {
-    printf("\nr=%d\n", reverse(-2147483648));
+    printf("\nr=%d\n", reverse(10));
 }
