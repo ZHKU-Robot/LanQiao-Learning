@@ -15,6 +15,7 @@
 - [如何贡献](#如何贡献)
 - [使用许可](#使用许可)
 ## 更新
+- 2020年10月16日15:59:41 更新 [有序数组的平方](./Easy/squares-of-a-sorted-array)
 - 2020年10月15日21:37:04 更新[罗马数字转整数](./Easy/roman-to-integer)
 - 2020年10月13日21:35:39 更新[回文数](./Easy/palindrome-number)
 - 2020年10月11日16:29:00 更新readme,[两数之和](./Easy/two-sum)
@@ -25,6 +26,7 @@
 2. [反转整数](./Easy/reverse-integer)
 3. [回文数](./Easy/palindrome-number)
 4. [罗马数字转整数](./Easy/roman-to-integer)
+5. [有序数组的平方](./Easy/squares-of-a-sorted-array)
 ### 中等题平时想不出，灵光一闪能做到
 1. 
 ### 困难题看不懂题目
