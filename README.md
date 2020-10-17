@@ -1,12 +1,13 @@
-# 聪聪的LeetCode学习
+# robot算法的开胃小菜
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/yujiecong/yjc-LeetCode-learning)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/ZHKU-Robot/Robot-algorithm-learning)
 
 ***
 本仓库包含以下内容：
 
-1. 一个傻逼的自我修养
-
+1. 一个团队的梦想(大概
+2. 各路神仙的思维碰撞
+3. 某菜鸟的瑟瑟发抖
 ## 内容列表
 - [更新](#更新)
 - [目录](#目录)
@@ -15,51 +16,51 @@
 - [如何贡献](#如何贡献)
 - [使用许可](#使用许可)
 ## 更新
-- 2020年10月18日00:52:40 更新[最长公共前缀](./Easy/longest-common-prefix)
-- 2020年10月16日15:59:41 更新[有序数组的平方](./Easy/squares-of-a-sorted-array)
-- 2020年10月15日21:37:04 更新[罗马数字转整数](./Easy/roman-to-integer)
-- 2020年10月13日21:35:39 更新[回文数](./Easy/palindrome-number)
-- 2020年10月11日16:29:00 更新readme,[两数之和](./Easy/two-sum)
-- 2020年10月11日20:47:43 更新[反转整数](./Easy/reverse-integer)
+- 2020年10月18日00:52:40 yujiecong更新[最长公共前缀](./Easy/longest-common-prefix)
+- 2020年10月16日15:59:41 yujiecong更新[有序数组的平方](./Easy/squares-of-a-sorted-array)
+- 2020年10月15日21:37:04 yujiecong更新[罗马数字转整数](./Easy/roman-to-integer)
+- 2020年10月13日21:35:39 yujiecong更新[回文数](./Easy/palindrome-number)
+- 2020年10月11日16:29:00 yujiecong更新readme,[两数之和](./Easy/two-sum)
+- 2020年10月11日20:47:43 yujiecong更新[反转整数](./Easy/reverse-integer)
 ## 目录
-### 简单题就是我的极限!
+### 简单题
 1. [两数之和](./Easy/two-sum)
 2. [反转整数](./Easy/reverse-integer)
 3. [回文数](./Easy/palindrome-number)
 4. [罗马数字转整数](./Easy/roman-to-integer)
 5. [有序数组的平方](./Easy/squares-of-a-sorted-array)
 6. [最长公共前缀](./Easy/longest-common-prefix)
-### 中等题看的时候想不出，也许饭后灵光一闪能做到
+### 中等题
 1. 
-### 困难题看不懂题目
+### 困难题
 1. 
 ## 背景
-看了某前后端大佬的战绩，瞬间感觉很难过，这么会这么强?泪目了
-> 不定期更新
-—— yujiecong
+给无聊的你们，加点料？多多提交issue和pr好吗？求你们了，我想merge几下
+> 话说搞robot算法肯定必不可少的，所以你们加油好吗？就算没有robot，就当开胃小菜吧
 
 这个仓库的目标是：
 
-1. 总好过躺在床上?
-2. 为什么我的小伙伴不来pr我，我想和你们merge
+1. 让你们别那么无聊
 
 
 ## 维护者
 
-[@yujiecong](https://github.com/yujiecong)。
+[@yujiecong](https://github.com/yujiecong)。  
+
+我在等你们的加入，那时候就会有你们了
 
 ## 如何贡献
 
-非常欢迎你的加入！[提一个 Issue](https://github.com/yujiecong/yjc-LeetCode-learning/issues/new) 或者提交一个 Pull Request。
+非常欢迎你的加入！[提一个 Issue](https://github.com/ZHKU-Robot/Robot-algorithm-learning/issues/new) 或者提交一个 Pull Request。
 
 
 本 Readme 遵循 [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) 行为规范。
 
-### 贡献者
+## 贡献者
 
 感谢以下参与项目的人：  
 <a href="graphs/contributors"><img src="https://avatars2.githubusercontent.com/u/44287052?s=60&amp;v=4" /></a>
 
-
+我在等你们的加入，那时候就会有你们的头像了
 ## 使用许可
-[MIT License](https://github.com/yujiecong/yjc-LeetCode-learning/blob/master/LICENSE)
+[MIT License](https://github.com/ZHKU-Robot/Robot-algorithm-learning/blob/main/LICENSE)
