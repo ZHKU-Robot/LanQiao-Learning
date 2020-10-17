@@ -1,4 +1,4 @@
-# robot算法的开胃小菜
+# Robot-algorithm-learning
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/ZHKU-Robot/Robot-algorithm-learning)
 
@@ -7,11 +7,12 @@
 
 1. 一个团队的梦想(大概
 2. 各路神仙的思维碰撞
-3. 某菜鸟的瑟瑟发抖
+3. 菜鸟的瑟瑟发抖
 ## 内容列表
 - [更新](#更新)
 - [目录](#目录)
 - [背景](#背景)
+- [相关仓库](#相关仓库)
 - [维护者](#维护者)
 - [如何贡献](#如何贡献)
 - [使用许可](#使用许可)
@@ -35,12 +36,17 @@
 ### 困难题
 1. 
 ## 背景
-给无聊的你们，加点料？多多提交issue和pr好吗？求你们了，我想merge几下
-> 话说搞robot算法肯定必不可少的，所以你们加油好吗？就算没有robot，就当开胃小菜吧
+给自己加点料，建议大家多多提交issue和pr  
 
-这个仓库的目标是：
+*注:yujiecong把自己的仓库移过来了,以后只在这里更新*   
 
-1. 让你们别那么无聊
+> 话说搞robot算法肯定必不可少的，所以你们加油好吗？就算没有robot，就当开胃小菜吧，希望我们越来越好!
+
+__这个仓库的目标是：__
+
+1. 无聊的时候，能够来这里完善一下这里的内容
+2. 提交issue并且引起讨论
+3. 提升自己的思维能力，代码能力
 
 
 ## 维护者
