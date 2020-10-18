@@ -2,7 +2,8 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/ZHKU-Robot/Robot-algorithm-learning)
 
-一起去LeetCode刷题吧~~
+一起去LeetCode刷题吧~~欢迎clone到本地修改并pull
+
 ***
 本仓库包含以下内容：
 
@@ -18,6 +19,7 @@
 - [如何贡献](#如何贡献)
 - [使用许可](#使用许可)
 ## 更新
+- 2020年10月18日17:18:21 yujiecong更新[用队列实现栈](./Easy/implement-stack-using-queues)
 - 2020年10月18日00:52:40 yujiecong更新[最长公共前缀](./Easy/longest-common-prefix)
 - 2020年10月16日15:59:41 yujiecong更新[有序数组的平方](./Easy/squares-of-a-sorted-array)
 - 2020年10月15日21:37:04 yujiecong更新[罗马数字转整数](./Easy/roman-to-integer)
@@ -32,6 +34,7 @@
 4. [罗马数字转整数](./Easy/roman-to-integer)
 5. [有序数组的平方](./Easy/squares-of-a-sorted-array)
 6. [最长公共前缀](./Easy/longest-common-prefix)
+7. [用队列实现栈](./Easy/implement-stack-using-queues)
 ### 中等题
 1. 
 ### 困难题
