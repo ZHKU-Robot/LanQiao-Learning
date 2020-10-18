@@ -1,7 +1,8 @@
-# Robot-algorithm-learning
+# [LeetCode-learning](https://leetcode-cn.com/problemset/all/)
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/ZHKU-Robot/Robot-algorithm-learning)
 
+一起去LeetCode刷题吧~~
 ***
 本仓库包含以下内容：
 
