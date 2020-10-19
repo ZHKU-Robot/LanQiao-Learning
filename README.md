@@ -19,6 +19,7 @@
 - [如何贡献](#如何贡献)
 - [使用许可](#使用许可)
 ## 更新
+- 2020年10月19日18:30:08 yujiecong更新[有效的括号](./Easy/valid-parentheses)
 - 2020年10月18日17:18:21 yujiecong更新[用队列实现栈](./Easy/implement-stack-using-queues)
 - 2020年10月18日00:52:40 yujiecong更新[最长公共前缀](./Easy/longest-common-prefix)
 - 2020年10月16日15:59:41 yujiecong更新[有序数组的平方](./Easy/squares-of-a-sorted-array)
@@ -35,6 +36,7 @@
 5. [有序数组的平方](./Easy/squares-of-a-sorted-array)
 6. [最长公共前缀](./Easy/longest-common-prefix)
 7. [用队列实现栈](./Easy/implement-stack-using-queues)
+8. [有效的括号](./Easy/valid-parentheses)
 ### 中等题
 1. 
 ### 困难题
@@ -61,7 +63,7 @@ __这个仓库的目标是：__
 
 ## 如何贡献
 
-非常欢迎你的加入！[提一个 Issue](https://github.com/ZHKU-Robot/Robot-algorithm-learning/issues/new) 或者提交一个 Pull Request。
+非常欢迎你的加入！[提一个 Issue](./issues/new) 或者提交一个 Pull Request。
 
 
 本 Readme 遵循 [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) 行为规范。
@@ -73,4 +75,4 @@ __这个仓库的目标是：__
 
 我在等你们的加入，那时候就会有你们的头像了
 ## 使用许可
-[MIT License](https://github.com/ZHKU-Robot/Robot-algorithm-learning/blob/main/LICENSE)
+[MIT License](./blob/main/LICENSE)
