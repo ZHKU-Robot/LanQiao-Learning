@@ -19,6 +19,7 @@
 - [如何贡献](#如何贡献)
 - [使用许可](#使用许可)
 ## 更新
+- 2020年10月20日12:11:43 yujiecong更新[合并两个有序链表](./Easy/merge-two-sorted-lists)
 - 2020年10月19日18:30:08 yujiecong更新[有效的括号](./Easy/valid-parentheses)
 - 2020年10月18日17:18:21 yujiecong更新[用队列实现栈](./Easy/implement-stack-using-queues)
 - 2020年10月18日00:52:40 yujiecong更新[最长公共前缀](./Easy/longest-common-prefix)
@@ -37,6 +38,7 @@
 6. [最长公共前缀](./Easy/longest-common-prefix)
 7. [用队列实现栈](./Easy/implement-stack-using-queues)
 8. [有效的括号](./Easy/valid-parentheses)
+9. [合并两个有序链表](./Easy/merge-two-sorted-lists)
 ### 中等题
 1. 
 ### 困难题

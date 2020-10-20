@@ -102,6 +102,39 @@ int main()
 ![img](img/1.png)  
 算是最低级的了,因为用到了动态数组去存储，浪费了很多空间，接着我们去升级一下   
 这个说过了，是根据直觉得到的做法，必然有很多缺陷，我们可以稍微升级一下思路(仅仅是思路..)  
+```
+bool isPalindrome(int x)
+{
+
+    if (x <0 || (x%10==0 && x!=0))
+    {
+        return false;
+    }
+    else
+    {
+        if (x < 10)
+        {
+            return true;
+        }
+
+        int t = 0,num=x;
+        while (num>t)
+        {
+
+            t = t * 10 + num % 10;
+            printf("t=%d num=%d \n",t,num);
+            num/= 10;
+        }
+        
+        return num == t || num== t / 10;
+    }
+    return true;
+}
+int main()
+{
+    printf("is Palindrome? %d \n", isPalindrome(121));
+}
+```
 ![img](img/2.png)  
 因为还是好慢a  
 不知道怎么回事，先这样了
