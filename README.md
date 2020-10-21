@@ -19,6 +19,7 @@
 - [如何贡献](#如何贡献)
 - [使用许可](#使用许可)
 ## 更新
+- 2020年10月22日00:09:56 yujiecong更新[删除排序数组中的重复项](./Easy/remove-duplicates-from-sorted-array)然后就去睡觉了
 - 2020年10月21日11:26:12 yujiecong更新[合并两个有序链表](./Easy/merge-two-sorted-lists)解法2
 - 2020年10月20日12:11:43 yujiecong更新[合并两个有序链表](./Easy/merge-two-sorted-lists)
 - 2020年10月19日18:30:08 yujiecong更新[有效的括号](./Easy/valid-parentheses)
@@ -40,6 +41,7 @@
 7. [用队列实现栈](./Easy/implement-stack-using-queues)
 8. [有效的括号](./Easy/valid-parentheses)
 9. [合并两个有序链表](./Easy/merge-two-sorted-lists)
+10. [删除排序数组中的重复项](./Easy/remove-duplicates-from-sorted-array)
 ### 中等题
 1. 
 ### 困难题
