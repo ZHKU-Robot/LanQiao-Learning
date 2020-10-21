@@ -12,7 +12,7 @@
 通过次数391,884提交次数607,231
 
 ## 个人见解
-
+## 思路1：取出所有元素重排
 痛苦，真的痛苦，我们首先来创建链表  
 ```
 struct ListNode
@@ -227,3 +227,117 @@ AddressSanitizer: heap-buffer-overflow on address 0x602000000130 at pc 0x55a3c16
 
 给我最大的感受就是，真的太吃我时间了，而且我还没学到啥，就对数据结构熟悉了一点，我真服了，我智商怎么这么低。。  
 
+## 思路2:动态元素插入
+
+其实这个思路才是最简单的，只要遍历l2，查看元素，再跟l1的比较即可
+
+
+然而我最讨厌的就是这种，本地跑的跟LeetCode跑的不一样的结果了，真的太恶心了！  
+只能用print大法看看哪里断了。。
+
+找到了
+
+代码在[solution2](merge-two-sorted-lists-solution2)这里  
+
+终于终于..
+![img](img/3.png)  
+由于不依赖自己写的代码，所以简短了很多
+```
+struct ListNode *mergeTwoLists(struct ListNode *l1, struct ListNode *l2)
+{
+    int var1, var2;
+    struct ListNode *t1 = l1, *t2 = l2, *head = l1;
+    int count = 0;
+    if (l1 == NULL && l2 == NULL)
+    {
+        return NULL;
+    }
+
+    if (l1 != NULL && l2 == NULL)
+    {
+        return t1;
+    }
+    else if (l2 != NULL && l1 == NULL)
+    {
+        return t2;
+    }
+    else
+    {
+        while (1)
+        {
+
+            if (t2 == NULL)
+            {
+                break;
+            }
+            listPrint(head);
+            printf("t1.val =%d ", t1->val);
+            var1 = t1->val;
+
+            printf("t2.val =%d \n", t2->val);
+            var2 = t2->val;
+
+            struct ListNode *t = (struct ListNode *)malloc(sizeof(struct ListNode));
+            t->next = NULL;
+            t->val = var2;
+
+            if (var2 >= var1)
+            {
+                printf("var2 > var1 \n");
+                if (t1->next != NULL)
+                {
+                    if (t1->next->val > var2)
+                    {
+                        t->next = t1->next;
+                        t1->next = t;
+                        t2 = t2->next;
+                    }
+                }
+                else
+                {
+                    t1->next = t;
+                    t2 = t2->next;
+                    t1 = head;
+                    printf("restart \n");
+                    continue;
+                }
+            }
+            else
+            {
+                printf("var2 < var1 \n");
+                if (t1 != NULL)
+                {
+                    //只有头指针跟t1指针相等才能头插，不然要connect
+                    if (t1 == head)
+                    {
+                        printf("set head \n");
+                        t->next = t1;
+                        head = t;
+                        t1 = head;
+                        t2 = t2->next;
+                        continue;
+                    }
+                    else{
+                        printf("connect \n");
+
+                    }
+
+                    // printf("two num connect \n");
+                    // t->next = t1->next;
+                    // t1->next = t;
+                }
+                else //只有一个结点
+                {
+              
+                }
+
+                t2 = t2->next;
+            }
+            t1 = t1->next;
+
+        }
+    }
+    return head;
+}
+
+```
