@@ -72,7 +72,7 @@ __这个仓库的目标是：__
 
 ## 如何贡献
 
-非常欢迎你的加入！[提一个 Issue](./issues/new) 或者提交一个 Pull Request。
+非常欢迎你的加入！[提一个 Issue](https://github.com/ZHKU-Robot/Robot-algorithm-learning/issues/new) 或者提交一个 Pull Request。
 
 
 本 Readme 遵循 [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) 行为规范。
@@ -84,4 +84,4 @@ __这个仓库的目标是：__
 
 我在等你们的加入，那时候就会有你们的头像了
 ## 使用许可
-[MIT License](./blob/main/LICENSE)
+[MIT License](./LICENSE)
