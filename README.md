@@ -19,6 +19,7 @@
 - [如何贡献](#如何贡献)
 - [使用许可](#使用许可)
 ## 更新
+- 2020年10月22日10:12:17 yujiecong更新[移除元素](./Easy/remove-element) 更改策略，主要以python为主，因为C太浪费时间了..
 - 2020年10月22日00:09:56 yujiecong更新[删除排序数组中的重复项](./Easy/remove-duplicates-from-sorted-array)然后就去睡觉了
 - 2020年10月21日11:26:12 yujiecong更新[合并两个有序链表](./Easy/merge-two-sorted-lists)解法2
 - 2020年10月20日12:11:43 yujiecong更新[合并两个有序链表](./Easy/merge-two-sorted-lists)
@@ -42,6 +43,7 @@
 8. [有效的括号](./Easy/valid-parentheses)
 9. [合并两个有序链表](./Easy/merge-two-sorted-lists)
 10. [删除排序数组中的重复项](./Easy/remove-duplicates-from-sorted-array)
+11. [移除元素](./Easy/remove-element)
 ### 中等题
 1. 
 ### 困难题
