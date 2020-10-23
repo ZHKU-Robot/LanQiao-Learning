@@ -11,6 +11,7 @@
 2. 各路神仙的思维碰撞
 3. 菜鸟的瑟瑟发抖
 ## 内容列表
+- [前言](#前言)
 - [更新](#更新)
 - [目录](#目录)
 - [背景](#背景)
@@ -18,7 +19,16 @@
 - [维护者](#维护者)
 - [如何贡献](#如何贡献)
 - [使用许可](#使用许可)
+## 前言
+很痛苦,如果不熟悉排序算法，你可能会半天憋不出一个代码或者说半天调试不对代码..  
+所以请确保你对以下算法熟悉.
+- 直接插入排序(哨兵位)
+- 快速排序
+- 冒泡排序(以及进阶冒泡)
+
 ## 更新
+- 2020年10月23日10:14:58 yujiecong更新[搜索插入位置](./Easy/search-insert-position/)
+- 2020年10月23日09:50:47 yujiecong更新[常见排序算法](./Sort-Algorithm)
 - 2020年10月22日19:21:43 yujiecong更新[实现 strStr](./Easy/implement-strstr/)
 - 2020年10月22日10:12:17 yujiecong更新[移除元素](./Easy/remove-element) 更改策略，主要以python为主，因为C太浪费时间了..
 - 2020年10月22日00:09:56 yujiecong更新[删除排序数组中的重复项](./Easy/remove-duplicates-from-sorted-array)然后就去睡觉了
@@ -46,6 +56,7 @@
 10. [删除排序数组中的重复项](./Easy/remove-duplicates-from-sorted-array)
 11. [移除元素](./Easy/remove-element)
 12. [实现 strStr](./Easy/implement-strstr/)
+13. [搜索插入位置](./Easy/search-insert-position/)
 ### 中等题
 1. 
 ### 困难题
