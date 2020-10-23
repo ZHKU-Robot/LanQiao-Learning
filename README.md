@@ -27,6 +27,7 @@
 - 冒泡排序(以及进阶冒泡)
 
 ## 更新
+- 2020年10月23日23:05:01 yujiecong**完善**[搜索插入位置](./Easy/search-insert-position/)
 - 2020年10月23日10:14:58 yujiecong更新[搜索插入位置](./Easy/search-insert-position/)
 - 2020年10月23日09:50:47 yujiecong更新[常见排序算法](./Sort-Algorithm)
 - 2020年10月22日19:21:43 yujiecong更新[实现 strStr](./Easy/implement-strstr/)
