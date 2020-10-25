@@ -7,9 +7,8 @@
 ***
 本仓库包含以下内容：
 
-1. 一个团队的梦想(大概
-2. 各路神仙的思维碰撞
-3. 菜鸟的瑟瑟发抖
+1. 现在只有yujiecong的单人solo
+
 ## 内容列表
 - [前言](#前言)
 - [更新](#更新)
@@ -25,15 +24,22 @@
 - 直接插入排序(哨兵位)
 - 快速排序
 - 冒泡排序(以及进阶冒泡)
+- 递归(我也不会呜呜呜)
 
 ## 更新
+- 2020年10月25日15:24:23 yujiecong更新[外观数列](./Easy/count-and-say/)
+    - 昨天没更新，今天冒个泡
+    - 这道题是我第一次看一遍没看懂的简单题，记录一下哈哈
 - 2020年10月23日23:05:01 yujiecong**完善**[搜索插入位置](./Easy/search-insert-position/)
 - 2020年10月23日10:14:58 yujiecong更新[搜索插入位置](./Easy/search-insert-position/)
 - 2020年10月23日09:50:47 yujiecong更新[常见排序算法](./Sort-Algorithm)
 - 2020年10月22日19:21:43 yujiecong更新[实现 strStr](./Easy/implement-strstr/)
-- 2020年10月22日10:12:17 yujiecong更新[移除元素](./Easy/remove-element) 更改策略，主要以python为主，因为C太浪费时间了..
-- 2020年10月22日00:09:56 yujiecong更新[删除排序数组中的重复项](./Easy/remove-duplicates-from-sorted-array)然后就去睡觉了
-- 2020年10月21日11:26:12 yujiecong更新[合并两个有序链表](./Easy/merge-two-sorted-lists)解法2
+- 2020年10月22日10:12:17 yujiecong更新[移除元素](./Easy/remove-element) 
+    - 更改策略，主要以python为主，因为C太浪费时间了..
+- 2020年10月22日00:09:56 yujiecong更新[删除排序数组中的重复项](./Easy/remove-duplicates-from-sorted-array)
+    - 然后就去睡觉了
+- 2020年10月21日11:26:12 yujiecong更新[合并两个有序链表](./Easy/merge-two-sorted-lists)
+    - 解法2
 - 2020年10月20日12:11:43 yujiecong更新[合并两个有序链表](./Easy/merge-two-sorted-lists)
 - 2020年10月19日18:30:08 yujiecong更新[有效的括号](./Easy/valid-parentheses)
 - 2020年10月18日17:18:21 yujiecong更新[用队列实现栈](./Easy/implement-stack-using-queues)
@@ -41,7 +47,7 @@
 - 2020年10月16日15:59:41 yujiecong更新[有序数组的平方](./Easy/squares-of-a-sorted-array)
 - 2020年10月15日21:37:04 yujiecong更新[罗马数字转整数](./Easy/roman-to-integer)
 - 2020年10月13日21:35:39 yujiecong更新[回文数](./Easy/palindrome-number)
-- 2020年10月11日16:29:00 yujiecong更新readme,[两数之和](./Easy/two-sum)
+- 2020年10月11日16:29:00 yujiecong更新[两数之和](./Easy/two-sum)
 - 2020年10月11日20:47:43 yujiecong更新[反转整数](./Easy/reverse-integer)
 ## 目录
 ### 简单题
@@ -58,6 +64,7 @@
 11. [移除元素](./Easy/remove-element)
 12. [实现 strStr](./Easy/implement-strstr/)
 13. [搜索插入位置](./Easy/search-insert-position/)
+14. [外观数列](./Easy/count-and-say/)
 ### 中等题
 1. 
 ### 困难题
