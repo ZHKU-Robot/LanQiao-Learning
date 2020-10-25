@@ -27,6 +27,9 @@
 - 递归(我也不会呜呜呜)
 
 ## 更新
+- 2020年10月25日23:32:26 yujiecong更新[Maximum Subarray](./Easy/maximum-subarray)却想不出来
+    - 看到这题难度为简单，我陷入了沉思! 
+        - 思考了30分钟我一行代码没写出来，我又陷入了沉思！
 - 2020年10月25日15:24:23 yujiecong更新[外观数列](./Easy/count-and-say/)
     - 昨天没更新，今天冒个泡
     - 这道题是我第一次看一遍没看懂的简单题，记录一下哈哈
@@ -39,16 +42,32 @@
 - 2020年10月22日00:09:56 yujiecong更新[删除排序数组中的重复项](./Easy/remove-duplicates-from-sorted-array)
     - 然后就去睡觉了
 - 2020年10月21日11:26:12 yujiecong更新[合并两个有序链表](./Easy/merge-two-sorted-lists)
-    - 解法2
+    - 解法2 使用动态插入
 - 2020年10月20日12:11:43 yujiecong更新[合并两个有序链表](./Easy/merge-two-sorted-lists)
+    - 解法1 是最蠢的全排方法(他的存在是为了考验链表的使用)
 - 2020年10月19日18:30:08 yujiecong更新[有效的括号](./Easy/valid-parentheses)
+    - 栈的典型应用
 - 2020年10月18日17:18:21 yujiecong更新[用队列实现栈](./Easy/implement-stack-using-queues)
+    - 有句话说的好，把栈指针反着指就是队列了
 - 2020年10月18日00:52:40 yujiecong更新[最长公共前缀](./Easy/longest-common-prefix)
+    - 知道滑动窗口
+    - 利用木桶效应
+    - 找到最优开局
 - 2020年10月16日15:59:41 yujiecong更新[有序数组的平方](./Easy/squares-of-a-sorted-array)
+    - 直接插入排序，以及常见排序
 - 2020年10月15日21:37:04 yujiecong更新[罗马数字转整数](./Easy/roman-to-integer)
+    - 手写罗马数字解析器
 - 2020年10月13日21:35:39 yujiecong更新[回文数](./Easy/palindrome-number)
+    - 双指针
+    - 转化为字符串
+    - 整数翻转
+    - 防止溢出,特殊情况,极端情况
 - 2020年10月11日16:29:00 yujiecong更新[两数之和](./Easy/two-sum)
+    - 哈希表(python字典或者C++的map)
+
 - 2020年10月11日20:47:43 yujiecong更新[反转整数](./Easy/reverse-integer)
+    - 防止溢出
+    - 整数翻转
 ## 目录
 ### 简单题
 1. [两数之和](./Easy/two-sum)

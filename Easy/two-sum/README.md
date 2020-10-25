@@ -15,6 +15,7 @@
 
 通过次数1,454,802提交次数2,929,448
 ## 个人解析
+### C
 这种简单题，一般会有一种直接的思路，例如两个for循环就能搞定的题,C代码如下
 ```
 #include <stdio.h>
@@ -50,6 +51,7 @@ int main()
 }
 ```
 ![img](img/c.png)    
+### python
 python3代码如下,思路是一样的
 ```
 class Solution:
@@ -73,7 +75,7 @@ class Solution(object):
                 if nums[_]+nums[__]==target:
                     return [_,__]
 ```
-执行用时: 3756 ms
+执行用时: 3756 ms  
 内存消耗: 12.4 MB
 
 # 效率着实低  

@@ -22,6 +22,7 @@
 ## 个人解析
 像这种简单题，一般都会有一个比较直观的思路，即两个for循环去比较
 这里给出一个cpp版本
+### c++
 ```
 class Solution {
 public:
@@ -93,7 +94,7 @@ public:
 ```
 ![img](img/cpp.png)  
 话说这也是很一般的方法，就是直观得出的，并没有任何的trick
-
+### python
 若是用python来做，那么应该是这样的，思路也非常简单，就是获取最小长度的字符串，再每一个都遍历确认。跟上面的思路一样
 ```
 class Solution(object):
