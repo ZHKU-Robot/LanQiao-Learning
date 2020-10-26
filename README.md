@@ -11,6 +11,10 @@
 
 1. 现在只有yujiecong的单人solo
 
+**注：目前的顺序为简单难度从上到下**
+
+![1603720038896](img/1603720038896.png)
+
 ## 内容列表
 - [前言](#前言)
 - [更新](#更新)
@@ -30,6 +34,15 @@
 - 递归(我也不会呜呜呜)
 
 ## 更新
+
+- 2020年10月26日23:28:46 yujiecong 更新  [sqrtx](Easy\sqrtx) 
+    - 作弊都能过笑死我了
+    - 5s做出
+    - 待完善完整的sqrt实现
+- 2020年10月26日23:23:40 yujieocng 更新 [add-binary](Easy\add-binary) 
+    - 1分钟做出
+- 2020年10月26日23:16:12 yujiecong更新 [plus-one](Easy\plus-one) 
+    - 3分钟做出
 - 2020年10月26日17:28:54 yujiecong更新 [length-of-last-word](Easy\length-of-last-word) 
     - 耗时42分钟，不是很满意
         - 极端情况
@@ -111,6 +124,9 @@
 14. [外观数列](./Easy/count-and-say/)
 15. [Maximum Subarray](./Easy/maximum-subarray)
 16. [length-of-last-word](Easy\length-of-last-word) 
+17.  [plus-one](Easy\plus-one) 
+18.  [add-binary](Easy\add-binary) 
+19.  [sqrtx](Easy\sqrtx) 
 ### 中等题
 
 1. 
