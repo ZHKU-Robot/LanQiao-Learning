@@ -1,9 +1,6 @@
 # [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)
-给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
 
-```
-<style type="text/css">img{text-align: center; margin: 0 auto;}</style>
-```
+给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
 
 Example 1:
 
@@ -49,6 +46,7 @@ Constraints:
 通过次数351,317提交次数667,718
 
 ## python
+
 这道题很明显，第一个思路也只能是滑动窗口暴力遍历，除此之外就很离谱，还要我用O(n)的复杂度,我怎么觉得我的思路就是O(n2)
 
 ### 学到现在了，是不愿意直接用暴力法的，一定要摒弃这种思想！！
@@ -172,3 +170,34 @@ tmp + nums[i] =1 + 4 = 5
 很明显，最后的赢家显然是max_=6
 
 # 那么就是这种思路了~我得反思反思，为什么我想不出来aaa
+
+[最后的代码是这个大佬给的](https://leetcode-cn.com/problems/maximum-subarray/solution/zui-da-zi-xu-he-cshi-xian-si-chong-jie-fa-bao-li-f/)
+
+```python
+class Solution:
+    def maxSubArray(self, nums) -> int:
+        tmp = nums[0]
+        max_ = tmp
+        n = len(nums)
+        for i in range(1, n):
+            print("tmp={} max_={}".format(tmp,max_))
+            # 当当前序列加上此时的元素的值大于tmp的值，说明最大序列和可能出现在后续序列中，记录此时的最大值
+            print("tmp + nums[i] ={} + {} = {}".format(tmp, nums[i], tmp + nums[i]))
+            if tmp + nums[i] > nums[i]:
+
+                max_ = max(max_, tmp + nums[i])
+                tmp = tmp + nums[i]
+            else:
+                # 当tmp(当前和)小于下一个元素时，当前最长序列到此为止。以该元素为起点继续找最大子序列,
+                # 并记录此时的最大值
+                max_ = max(max_, tmp, tmp + nums[i], nums[i])
+                tmp = nums[i]
+        return max_
+
+```
+
+![1603701405389](img/1603701405389.png)
+
+
+
+其实贪心算法也很有意思，可以去看看，在这里就不说了，因为我是想不出来的

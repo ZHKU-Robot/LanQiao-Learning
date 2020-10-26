@@ -4,6 +4,8 @@
 
 一起去LeetCode刷题吧~~欢迎clone到本地修改并pull
 
+ ![发现事情并不简单](img/20201026689124_bqzonA.jpg) 
+
 ***
 本仓库包含以下内容：
 
@@ -21,12 +23,18 @@
 ## 前言
 很痛苦,如果不熟悉排序算法，你可能会半天憋不出一个代码或者说半天调试不对代码..  
 所以请确保你对以下算法熟悉.
+
 - 直接插入排序(哨兵位)
 - 快速排序(喵喵喵?)
 - 冒泡排序(以及进阶冒泡)
 - 递归(我也不会呜呜呜)
 
 ## 更新
+- 2020年10月26日17:28:54 yujiecong更新 [length-of-last-word](Easy\length-of-last-word) 
+    - 耗时42分钟，不是很满意
+        - 极端情况
+        - 过滤脏数据
+        - 倒序查找
 - 2020年10月25日23:32:26 yujiecong更新[Maximum Subarray](./Easy/maximum-subarray)却想不出来(建议收藏)
     - 动态规划
     - 贪心算法
@@ -44,12 +52,10 @@
     - 直接插入排序c
 - 2020年10月23日10:14:58 yujiecong更新[搜索插入位置](./Easy/search-insert-position/)
     - 直接插入排序python
-
 - 2020年10月23日09:50:47 yujiecong更新[常见排序算法](./Sort-Algorithm)
     - 直接插入排序
         - C/C++
         - python
-
 - 2020年10月22日19:21:43 yujiecong更新[实现 strStr](./Easy/implement-strstr/)
     - 滑动窗口
     - 最快查找
@@ -103,7 +109,10 @@
 12. [实现 strStr](./Easy/implement-strstr/)
 13. [搜索插入位置](./Easy/search-insert-position/)
 14. [外观数列](./Easy/count-and-say/)
+15. [Maximum Subarray](./Easy/maximum-subarray)
+16. [length-of-last-word](Easy\length-of-last-word) 
 ### 中等题
+
 1. 
 ### 困难题
 1. 
