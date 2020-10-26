@@ -31,12 +31,24 @@
     - 看到这题难度为简单，我陷入了沉思! 
         - 思考了30分钟我一行代码没写出来，我又陷入了沉思！
 - 2020年10月25日15:24:23 yujiecong更新[外观数列](./Easy/count-and-say/)
-    - 昨天没更新，今天冒个泡
-    - 这道题是我第一次看一遍没看懂的简单题，记录一下哈哈
+    - 昨天没更新，今天冒个泡,这道题是我第一次看一遍没看懂的简单题，记录一下哈哈
+        - 找出内在规律
+        - 合适的判断以及结束条件
+        - 递归与for循环转换
 - 2020年10月23日23:05:01 yujiecong**完善**[搜索插入位置](./Easy/search-insert-position/)
+    - 直接插入排序c
 - 2020年10月23日10:14:58 yujiecong更新[搜索插入位置](./Easy/search-insert-position/)
+    - 直接插入排序python
+
 - 2020年10月23日09:50:47 yujiecong更新[常见排序算法](./Sort-Algorithm)
+    - 直接插入排序
+        - C/C++
+        - python
+
 - 2020年10月22日19:21:43 yujiecong更新[实现 strStr](./Easy/implement-strstr/)
+    - 滑动窗口
+    - 最快查找
+    - 双指针
 - 2020年10月22日10:12:17 yujiecong更新[移除元素](./Easy/remove-element) 
     - 更改策略，主要以python为主，因为C太浪费时间了..
 - 2020年10月22日00:09:56 yujiecong更新[删除排序数组中的重复项](./Easy/remove-duplicates-from-sorted-array)
@@ -64,7 +76,6 @@
     - 防止溢出,特殊情况,极端情况
 - 2020年10月11日16:29:00 yujiecong更新[两数之和](./Easy/two-sum)
     - 哈希表(python字典或者C++的map)
-
 - 2020年10月11日20:47:43 yujiecong更新[反转整数](./Easy/reverse-integer)
     - 防止溢出
     - 整数翻转
