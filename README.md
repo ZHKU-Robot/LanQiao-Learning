@@ -17,6 +17,7 @@
 
 ## 内容列表
 - [前言](#前言)
+- [失败](#失败)
 - [更新](#更新)
 - [目录](#目录)
 - [背景](#背景)
@@ -32,9 +33,22 @@
 - 快速排序(喵喵喵?)
 - 冒泡排序(以及进阶冒泡)
 - 递归(我也不会呜呜呜)
-
+## 失败
+记录一下没做出来的题
+- [count-and-say](Easy\count-and-say) 
+    - 动态规划(dp)
+    - 递归
+- [Maximum Subarray](./Easy/maximum-subarray)
+    - 动态规划
+    - 贪心算法
+    - 分治法
 ## 更新
 
+- 2020年10月27日22:19:36 yujiecong更新  [count-and-say](Easy\count-and-say) 
+    - 又出现一道不会做的题了
+    - 动态规划(DP)
+    - 递归
+    - 已收藏
 - 2020年10月26日23:28:46 yujiecong 更新  [sqrtx](Easy\sqrtx) 
     - 作弊都能过笑死我了
     - 5s做出
@@ -127,6 +141,7 @@
 17.  [plus-one](Easy\plus-one) 
 18.  [add-binary](Easy\add-binary) 
 19.  [sqrtx](Easy\sqrtx) 
+20.  [count-and-say](Easy\count-and-say) 
 ### 中等题
 
 1. 
