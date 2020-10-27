@@ -37,8 +37,10 @@
 记录一下没做出来的题
 - [count-and-say](Easy\count-and-say) 
     - 动态规划(dp)
+    - 滚动数组
     - 递归
 - [Maximum Subarray](./Easy/maximum-subarray)
+    - 滚动数组
     - 动态规划
     - 贪心算法
     - 分治法
