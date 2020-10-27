@@ -92,7 +92,7 @@ bool emptyStack(mystack *s)
 }
 ```
 那么这里就是主逻辑，需要将在一起的括号弹出。将标记号置0
-
+```
 bool isValid(char *s)
 {
     int leng = 0, flag = 0, flag1 = 0, flag2 = 0;
@@ -160,7 +160,7 @@ bool isValid(char *s)
     }
     return emptyStack(stack);
 }
-
+```
 不过才是这个样子，其实不太满意
 
 ![img](img/1.png)  
