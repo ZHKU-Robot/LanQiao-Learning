@@ -50,7 +50,8 @@
     - 贪心算法
     - 分治法
 ## 更新
-
+- 2020年10月28日21:36:40 yujiecong更新   [merge-sorted-array](Easy\merge-sorted-array) 
+    - 直接插入排序
 - 2020年10月28日13:30:48 yujiecong更新  [remove-duplicates-from-sorted-list](Easy\remove-duplicates-from-sorted-list) 
     - 20分钟（很不满意)
     - 链表的删除
@@ -153,6 +154,9 @@
 19.  [sqrtx](Easy\sqrtx) 
 20.   [climbing-stairs](Easy\climbing-stairs) 
 21.  [remove-duplicates-from-sorted-list](Easy\remove-duplicates-from-sorted-list) 
+22. [merge-sorted-array](Easy\merge-sorted-array) 
+
+
 ### 中等题
 
 1. 
