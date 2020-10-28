@@ -30,12 +30,17 @@
 所以请确保你对以下算法熟悉.
 
 - 直接插入排序(哨兵位)
-- 快速排序(喵喵喵?)
 - 冒泡排序(以及进阶冒泡)
 - 递归(我也不会呜呜呜)
+- 动态规划
+- 常用数据结构的增删改查
+    - 链表 √
+    - 栈 √
+    - 队列 ×
+    - 二叉树 ×
 ## 失败
 记录一下没做出来的题
-- [count-and-say](Easy\count-and-say) 
+-  [climbing-stairs](Easy\climbing-stairs) 
     - 动态规划(dp)
     - 滚动数组
     - 递归
@@ -46,7 +51,10 @@
     - 分治法
 ## 更新
 
-- 2020年10月27日22:19:36 yujiecong更新  [count-and-say](Easy\count-and-say) 
+- 2020年10月28日13:30:48 yujiecong更新  [remove-duplicates-from-sorted-list](Easy\remove-duplicates-from-sorted-list) 
+    - 20分钟（很不满意)
+    - 链表的删除
+- 2020年10月27日22:19:36 yujiecong更新   [climbing-stairs](Easy\climbing-stairs) 
     - 又出现一道不会做的题了
     - 动态规划(DP)
     - 递归
@@ -143,7 +151,8 @@
 17.  [plus-one](Easy\plus-one) 
 18.  [add-binary](Easy\add-binary) 
 19.  [sqrtx](Easy\sqrtx) 
-20.  [count-and-say](Easy\count-and-say) 
+20.   [climbing-stairs](Easy\climbing-stairs) 
+21.  [remove-duplicates-from-sorted-list](Easy\remove-duplicates-from-sorted-list) 
 ### 中等题
 
 1. 
