@@ -44,12 +44,15 @@
     - 动态规划(dp)
     - 滚动数组
     - 递归
+    - 找规律(斐波那契数列)
 - [Maximum Subarray](./Easy/maximum-subarray)
     - 滚动数组
     - 动态规划
     - 贪心算法
     - 分治法
 ## 更新
+- 2020年10月29日21:50:59 yujiecong更不动了，当我看见二叉树，没动力了
+    - 淦
 - 2020年10月28日21:36:40 yujiecong更新   [merge-sorted-array](Easy\merge-sorted-array) 
     - 直接插入排序
 - 2020年10月28日13:30:48 yujiecong更新  [remove-duplicates-from-sorted-list](Easy\remove-duplicates-from-sorted-list) 
@@ -59,6 +62,7 @@
     - 又出现一道不会做的题了
     - 动态规划(DP)
     - 递归
+    - 找规律(斐波那契数列)
     - 已收藏
 - 2020年10月26日23:28:46 yujiecong 更新  [sqrtx](Easy\sqrtx) 
     - 作弊都能过笑死我了
