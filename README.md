@@ -42,7 +42,7 @@
     - 二叉树 ×
 ## 失败
 记录一下没做出来的题
--  [climbing-stairs](Easy\climbing-stairs) 
+-  [climbing-stairs](Easy/climbing-stairs) 
     - 动态规划(dp)
     - 滚动数组
     - 递归
@@ -53,32 +53,32 @@
     - 贪心算法
     - 分治法
 ## 更新
-- 2020年11月1日17:26:53 更新 杨辉三角2  [pascals-triangle-ii](Easy\pascals-triangle-ii) 
+- 2020年11月1日17:26:53 更新 杨辉三角2  [pascals-triangle-ii](Easy/pascals-triangle-ii) 
     - 有了下面这个基础,会比较好做
-- 2020年11月1日16:10:06 更新 杨辉三角 [pascals-triangle](Easy\pascals-triangle) 
+- 2020年11月1日16:10:06 更新 杨辉三角 [pascals-triangle](Easy/pascals-triangle) 
     - 比较容易吧
 - 2020年10月29日21:50:59 yujiecong更不动了，当我看见二叉树，没动力了
     - 淦
-- 2020年10月28日21:36:40 yujiecong更新   [merge-sorted-array](Easy\merge-sorted-array) 
+- 2020年10月28日21:36:40 yujiecong更新   [merge-sorted-array](Easy/merge-sorted-array) 
     - 直接插入排序
-- 2020年10月28日13:30:48 yujiecong更新  [remove-duplicates-from-sorted-list](Easy\remove-duplicates-from-sorted-list) 
+- 2020年10月28日13:30:48 yujiecong更新  [remove-duplicates-from-sorted-list](Easy/remove-duplicates-from-sorted-list) 
     - 20分钟（很不满意)
     - 链表的删除
-- 2020年10月27日22:19:36 yujiecong更新   [climbing-stairs](Easy\climbing-stairs) 
+- 2020年10月27日22:19:36 yujiecong更新   [climbing-stairs](Easy/climbing-stairs) 
     - 又出现一道不会做的题了
     - 动态规划(DP)
     - 递归
     - 找规律(斐波那契数列)
     - 已收藏
-- 2020年10月26日23:28:46 yujiecong 更新  [sqrtx](Easy\sqrtx) 
+- 2020年10月26日23:28:46 yujiecong 更新  [sqrtx](Easy/sqrtx) 
     - 作弊都能过笑死我了
     - 5s做出
     - 待完善完整的sqrt实现
-- 2020年10月26日23:23:40 yujieocng 更新 [add-binary](Easy\add-binary) 
+- 2020年10月26日23:23:40 yujieocng 更新 [add-binary](Easy/add-binary) 
     - 1分钟做出
-- 2020年10月26日23:16:12 yujiecong更新 [plus-one](Easy\plus-one) 
+- 2020年10月26日23:16:12 yujiecong更新 [plus-one](Easy/plus-one) 
     - 3分钟做出
-- 2020年10月26日17:28:54 yujiecong更新 [length-of-last-word](Easy\length-of-last-word) 
+- 2020年10月26日17:28:54 yujiecong更新 [length-of-last-word](Easy/length-of-last-word) 
     - 耗时42分钟，不是很满意
         - 极端情况
         - 过滤脏数据
@@ -158,13 +158,13 @@
 13. [搜索插入位置](./Easy/search-insert-position/)
 14. [外观数列](./Easy/count-and-say/)
 15. [Maximum Subarray](./Easy/maximum-subarray)
-16. [length-of-last-word](Easy\length-of-last-word) 
-17.  [plus-one](Easy\plus-one) 
-18.  [add-binary](Easy\add-binary) 
-19.  [sqrtx](Easy\sqrtx) 
-20.   [climbing-stairs](Easy\climbing-stairs) 
-21.  [remove-duplicates-from-sorted-list](Easy\remove-duplicates-from-sorted-list) 
-22. [merge-sorted-array](Easy\merge-sorted-array) 
+16. [length-of-last-word](Easy/length-of-last-word) 
+17.  [plus-one](Easy/plus-one) 
+18.  [add-binary](Easy/add-binary) 
+19.  [sqrtx](Easy/sqrtx) 
+20.   [climbing-stairs](Easy/climbing-stairs) 
+21.  [remove-duplicates-from-sorted-list](Easy/remove-duplicates-from-sorted-list) 
+22. [merge-sorted-array](Easy/merge-sorted-array) 
 
 
 ### 中等题
