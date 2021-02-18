@@ -53,6 +53,8 @@
     - 贪心算法
     - 分治法
 ## 更新
+- 2021年2月19日00:01:12 fixed bug
+    - 准备开始做题
 - 2020年11月1日17:26:53 更新 杨辉三角2  [pascals-triangle-ii](Easy/pascals-triangle-ii) 
     - 有了下面这个基础,会比较好做
 - 2020年11月1日16:10:06 更新 杨辉三角 [pascals-triangle](Easy/pascals-triangle) 
