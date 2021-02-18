@@ -1,3 +1,7 @@
+
+
+
+
 #  Page 1
 
 ![attachment-img](img/courses_2786_attachments_1607412326157_1.png)
@@ -413,20 +417,129 @@ for a in l:
 
 
 
-![attachment-img](img/courses_2786_attachments_1607412326157_2.png)![1613558991427](img/1613558991427.png)
+![attachment-img](img/courses_2786_attachments_1607412326157_2.png)
+
+##  8，第八题 中等题
 
 
 
+​                         ![1613558991427](img/1613558991427.png)
+
+2021年2月18日12:53:07 开始想
+
+2021年2月18日13:39:12 做出来了
+
+有了第4题 递归产生这些的基础，再做这种生成的题，终于有点感觉了。用递归产生额
+
+### 暴力法终于做出来了，我舒服
+
+由于这里是全排列，所以用for循环产生一下所有的可能，哈哈哈，这个递归还可以吧
+
+```python
+l = []
+def generate(arr):
+    global l
+    if len(arr)==m:
+        l.append(arr)
+        return
+    for j in range(1,n+1):
+        generate(arr+[j])
+
+
+generate([])
+
+```
+
+```
+[[1, 1, 1], [1, 1, 2], [1, 1, 3], [1, 1, 4], [1, 2, 1], [1, 2, 2], [1, 2, 3], [1, 2, 4], [1, 3, 1], [1, 3, 2], [1, 3, 3], [1, 3, 4], [1, 4, 1], [1, 4, 2], [1, 4, 3], [1, 4, 4], [2, 1, 1], [2, 1, 2], [2, 1, 3], [2, 1, 4], [2, 2, 1], [2, 2, 2], [2, 2, 3], [2, 2, 4], [2, 3, 1], [2, 3, 2], [2, 3, 3], [2, 3, 4], [2, 4, 1], [2, 4, 2], [2, 4, 3], [2, 4, 4], [3, 1, 1], [3, 1, 2], [3, 1, 3], [3, 1, 4], [3, 2, 1], [3, 2, 2], [3, 2, 3], [3, 2, 4], [3, 3, 1], [3, 3, 2], [3, 3, 3], [3, 3, 4], [3, 4, 1], [3, 4, 2], [3, 4, 3], [3, 4, 4], [4, 1, 1], [4, 1, 2], [4, 1, 3], [4, 1, 4], [4, 2, 1], [4, 2, 2], [4, 2, 3], [4, 2, 4], [4, 3, 1], [4, 3, 2], [4, 3, 3], [4, 3, 4], [4, 4, 1], [4, 4, 2], [4, 4, 3], [4, 4, 4]]
+```
+
+然后就容易写到这样的检查合法性了
+
+```python
+# 暴力遍历所有 的可能
+def isValid(arr):
+    sum=0
+    for everarr in arr:
+        for arrIndex in range(1,m,2):
+            if everarr[arrIndex+1]>everarr[arrIndex] and everarr[arrIndex]<everarr[arrIndex-1]:
+                print(''.join([str(i)+' ' for i in everarr]))
+                sum+=1
+            else:
+                break
+    print("sum=",sum)
+
+```
+
+ 
+
+```
+2 1 2 
+2 1 3 
+2 1 4 
+3 1 2 
+3 1 3 
+3 1 4 
+3 2 3 
+3 2 4 
+4 1 2 
+4 1 3 
+4 1 4 
+4 2 3 
+4 2 4 
+4 3 4 
+sum= 14
+
+Process finished with exit code 0
+```
+
+但很遗憾，是过不了压力测试的，直接Stack Overflow了
+
+```
+RecursionError: maximum recursion depth exceeded in comparison
+```
+
+所以我们需要用回溯的方法再做一次，
+
+2021年2月18日14:20:03 做出来了
+
+```
+l = []
+flag = 0
+sum=0
+def generate(arr):
+    global l,flag,sum
+    for arrIndex in range(1,len(arr)-1):
+        flag = 0
+        if arr[arrIndex + 1] > arr[arrIndex] and arr[arrIndex] < arr[arrIndex - 1]:
+            flag=1
+        else:
+            return
+    if flag:
+        if len(arr)==m:
+            l.append(arr)
+            sum+=1
+            return
+    for j in range(1,n+1):
+        generate(arr+[j])
+
+
+generate([])
+print(l)
+print('sum=',sum)
+```
+
+```
+[[2, 1, 2], [2, 1, 3], [2, 1, 4], [3, 1, 2], [3, 1, 3], [3, 1, 4], [3, 2, 3], [3, 2, 4], [4, 1, 2], [4, 1, 3], [4, 1, 4], [4, 2, 3], [4, 2, 4], [4, 3, 4]]
+sum= 14
+```
+
+哈哈哈，不错不错，可以！
 
 
 
-
-
-
-
+![attachment-img](img/courses_2786_attachments_1607412326157_3.png)
 
 
 
  
-
- ![attachment-img](img/courses_2786_attachments_1607412326157_3.png) 
