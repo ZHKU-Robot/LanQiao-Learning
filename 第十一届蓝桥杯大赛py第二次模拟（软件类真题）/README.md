@@ -4,8 +4,6 @@
 
 #  Page 1
 
-![attachment-img](img/courses_2786_attachments_1607412326157_1.png)
-
 ## 1，第一题送分题
 
 ![1613546758042](img/1613546758042.png)
@@ -417,8 +415,6 @@ for a in l:
 
 
 
-![attachment-img](img/courses_2786_attachments_1607412326157_2.png)
-
 ##  8，第八题 中等题
 
 
@@ -536,7 +532,120 @@ sum= 14
 
 哈哈哈，不错不错，可以！
 
+## 9，第九题 做了我三个小时
 
+![1613703245728](img/1613703245728.png)
+
+这题很明显是求最短代价的题，由《大话数据结构》中有提到，这应该是一个带权无向图求最小生成树的算法
+
+![1613713029149](img/1613713029149.png)
+
+我们首先要初始化这个图
+
+```python
+class MGraph:
+    def __init__(self):
+        self.graphAdjList=GraphAdjList(n,numEdges)
+        self.vexs = [0 for _ in range(n)]
+        self.arc = [self.vexs.copy() for _ in range(n)]
+```
+
+用邻接矩阵的形式创建图和边关系
+
+```python
+    def createMGraph(self):
+        for i in range(n):
+            for j in range(i + 1, n):
+                x1, y1, h1 = test[i]
+                x2, y2, h2 = test[j]
+                cost = math.sqrt(math.pow(x1 - x2, 2) + math.pow(y1 - y2, 2)) \
+                       + math.pow(h1 - h2, 2)
+                cost=round(cost,2)
+                self.arc[i][j] = cost
+                self.arc[j][i] = self.arc[i][j]
+```
+
+这里的村庄可以互相连接，没有限制，所以这里的边需要全连接，以便计算最小成本
+
+
+
+首先打印出来看看邻接矩阵
+
+```
+    def showMGraph(self):
+        for a in self.arc:
+            print(a)
+```
+
+```
+[0, 27.31, 18.9, 6.0]
+[27.31, 0, 2.41, 15.4]
+[18.9, 2.41, 0, 9.0]
+[6.0, 15.4, 9.0, 0]
+```
+
+然后写一个基于邻接矩阵的最小生成树算法
+
+```
+ def prim(self):
+        min=65535
+        adjvex=[0 for _ in range(n)] #相关顶点下标
+        lowcost=[0 for _ in range(n)]#相关顶点间的权值
+        for i in range(n):
+            lowcost[i]=self.arc[0][i]
+
+        for i in range(1,n):
+            min=65536
+            j=1
+            k=0
+            while(j<n):
+                if lowcost[j]!=0 and lowcost[j]<min:
+                    min=lowcost[j]
+                    k=j
+                j+=1
+            print("({}<->{})".format(adjvex[k],k))
+            lowcost[k]=0
+            for j in range(1,n):
+                if(lowcost[j]!=0 and self.arc[k][j]<lowcost[j]):
+                    lowcost[j]=self.arc[k][j]
+                    adjvex[j]=k
+        print('lowcost=', lowcost)
+        print('adjvex',adjvex)
+
+        # 计算总共的代价
+        sum=0
+        for i,v in enumerate(adjvex):
+
+            sum+=self.arc[i][v]
+        print("sum=",sum)
+```
+
+结果就像这样
+
+```
+(0<->3)
+(3<->2)
+(2<->1)
+lowcost= [0, 0, 0, 0]
+adjvex [0, 2, 3, 0]
+sum= 17.41
+```
+
+
+
+prim的时间是~
+
+![1613715641225](img/1613715641225.png)
+
+
+
+
+
+
+
+## 10，第十题
+
+![1613703263645](img/1613703263645.png)
 
 ![attachment-img](img/courses_2786_attachments_1607412326157_3.png)
 

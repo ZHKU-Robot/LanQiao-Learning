@@ -1,4 +1,5 @@
 # LanQiao-Learning
+
 小小蓝桥杯
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](.)
@@ -23,8 +24,9 @@
 
 ## 更新
 
+- 2021年2月19日14:21:36 更新第九题
 - 2021年2月18日14:31:21 更新第八题
-- 2021年2月17日18:53:17 更新了一半的模拟题
+- 2021年2月17日18:53:17 更新了一半多的模拟题
 - 2021年2月17日13:37:51 本仓库诞生了
 
 ## 目录

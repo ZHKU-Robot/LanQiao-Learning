@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afdcf1e8-f7d8-43d7-9b2d-a7e00fcb8c57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/第十一届蓝桥杯大赛py第二次模拟（软件类真题）/8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/cc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第十一届蓝桥杯大赛py第二次模拟（软件类真题）/9.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/第十一届蓝桥杯大赛py第二次模拟（软件类真题）/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/第十一届蓝桥杯大赛py第二次模拟（软件类真题）/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,29 +35,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
-  <component name="RunManager" selected="Python.8">
-    <configuration name="4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LanQiao-Learning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/第十一届蓝桥杯大赛py第二次模拟（软件类真题）" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/第十一届蓝桥杯大赛py第二次模拟（软件类真题）/4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.9">
     <configuration name="5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LanQiao-Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,13 +123,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="9" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LanQiao-Learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/第十一届蓝桥杯大赛py第二次模拟（软件类真题）" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/第十一届蓝桥杯大赛py第二次模拟（软件类真题）/9.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.9" />
         <item itemvalue="Python.8" />
         <item itemvalue="Python.7" />
         <item itemvalue="Python.6" />
         <item itemvalue="Python.5" />
-        <item itemvalue="Python.4" />
       </list>
     </recent_temporary>
   </component>
@@ -163,25 +168,33 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1613629864605">
+    <state x="1245" y="259" key="#com.intellij.ide.util.MemberChooser" timestamp="1613711391092">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1613629864605" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1613629864605">
+    <state x="1245" y="259" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1613711391092" />
+    <state width="905" height="272" key="GridCell.Tab.0.bottom" timestamp="1613715675045">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1613629864605" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1613629864605">
+    <state width="905" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1613715675045" />
+    <state width="905" height="272" key="GridCell.Tab.0.center" timestamp="1613715675045">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1613629864605" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1613629864605">
+    <state width="905" height="272" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1613715675045" />
+    <state width="905" height="272" key="GridCell.Tab.0.left" timestamp="1613715675045">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1613629864605" />
-    <state x="581" y="221" width="758" height="638" key="find.popup" timestamp="1613544656043">
+    <state width="905" height="272" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1613715675045" />
+    <state width="905" height="272" key="GridCell.Tab.0.right" timestamp="1613715675045">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="581" y="221" width="758" height="638" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1613544656043" />
+    <state width="905" height="272" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1613715675045" />
+    <state x="592" y="193" key="SettingsEditor" timestamp="1613711444237">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="592" y="193" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1613711444237" />
+    <state x="581" y="221" width="758" height="638" key="find.popup" timestamp="1613712249475">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="581" y="221" width="758" height="638" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1613712249475" />
   </component>
 </project>
