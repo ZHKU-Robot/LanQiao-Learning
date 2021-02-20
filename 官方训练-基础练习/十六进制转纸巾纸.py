@@ -4,10 +4,5 @@
 #  Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 
-input()
-l=input().split()
-find=input()
-try:
-    print(l.index(find)+1)
-except ValueError:
-    print(-1)
+
+print(int(input(),16))

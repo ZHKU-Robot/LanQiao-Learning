@@ -4,10 +4,13 @@
 #  Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 
-input()
-l=input().split()
-find=input()
-try:
-    print(l.index(find)+1)
-except ValueError:
-    print(-1)
+
+for i in range(100,1000):
+
+
+    a=i%10
+    b=i//10%10
+    c=i//100
+
+    if a**3+b**3+c**3==i:
+        print(i)
