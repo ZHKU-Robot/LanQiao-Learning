@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afdcf1e8-f7d8-43d7-9b2d-a7e00fcb8c57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/01字串.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/Fibonacci数列.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/判断闰年.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/字母图形.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/数列特征.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/查找整数.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/A+B问题.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/十进制转十六进制.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/圆的面积.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/序列求和.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/官方训练-基础练习/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/官方训练-基础练习/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +39,8 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
-  <component name="RunManager" selected="Python.Fibonacci数列">
-    <configuration name="回文数 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.A+B问题">
+    <configuration name="序列求和" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LanQiao-Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -53,7 +52,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/回文数.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/序列求和.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -62,7 +61,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="字母图形" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="十进制转十六进制" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LanQiao-Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,7 +73,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/字母图形.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/十进制转十六进制.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,7 +82,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="01字串" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="圆的面积" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LanQiao-Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,7 +94,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/01字串.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/圆的面积.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +103,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="判断闰年" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="A+B问题" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LanQiao-Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,7 +115,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/判断闰年.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/A+B问题.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,6 +137,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/Fibonacci数列.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="判断闰年" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LanQiao-Learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/官方训练-基础练习" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/判断闰年.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -211,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.A+B问题" />
+        <item itemvalue="Python.序列求和" />
+        <item itemvalue="Python.圆的面积" />
+        <item itemvalue="Python.十进制转十六进制" />
         <item itemvalue="Python.Fibonacci数列" />
-        <item itemvalue="Python.01字串" />
-        <item itemvalue="Python.判断闰年" />
-        <item itemvalue="Python.字母图形" />
-        <item itemvalue="Python.回文数 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -241,22 +261,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1245" y="259" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1613711391092" />
-    <state width="1877" height="316" key="GridCell.Tab.0.bottom" timestamp="1613837244804">
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom" timestamp="1613878850193">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1613837244804" />
-    <state width="1877" height="316" key="GridCell.Tab.0.center" timestamp="1613837244804">
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1613878850193" />
+    <state width="1877" height="316" key="GridCell.Tab.0.center" timestamp="1613878850193">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1613837244804" />
-    <state width="1877" height="316" key="GridCell.Tab.0.left" timestamp="1613837244804">
+    <state width="1877" height="316" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1613878850193" />
+    <state width="1877" height="316" key="GridCell.Tab.0.left" timestamp="1613878850193">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1613837244804" />
-    <state width="1877" height="316" key="GridCell.Tab.0.right" timestamp="1613837244804">
+    <state width="1877" height="316" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1613878850193" />
+    <state width="1877" height="316" key="GridCell.Tab.0.right" timestamp="1613878850193">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1613837244804" />
+    <state width="1877" height="316" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1613878850193" />
     <state x="592" y="193" key="SettingsEditor" timestamp="1613711444237">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
