@@ -5,6 +5,7 @@
 -  [字母图形](#试题 基础练习 字母图形) 
 -  [试题 基础练习 圆的面积](#试题 基础练习 圆的面积)
 -  [2.17 N皇后问题](#2.17 N皇后问题)
+-  [2.23 sin之舞](#2.23 sin之舞)
 
 
 
@@ -1431,5 +1432,430 @@ else:
  5 6
  样例输出
  1 3 5 6 4 2
- **注意**
+
+obviously，一道找规律的题，如果有草稿纸画一下会好做很多
+
+```
+m, n=map(int, input().split())
+l=[]
+for r in range(m):
+    l.append([int(i) for i in input().split()])
+
+# 一开始 的方向是向下
+down,up,right,left=1,2,3,4
+
+_row=0
+_col=0
+for r in range(n//2+1):
+    print("round",r)
+    for c in range(_row,m-_row):
+        if l[c][r]!=-1:
+            print(l[c][r],end=' ')
+
+            l[c][r]=-1
+        _row += 1
+    _row-=1
+    _col+=1
+
+    for c in range(_col,n-_col+1):
+        if l[_row][_col]!=-1:
+            print(l[_row][_col],end=' ')
+            l[_row][_col]=-1
+        _col += 1
+    _col-=1
+    _row-=1
+
+    for c in range(_row,r-1,-1):
+        if l[c][_col]!=-1:
+            print(l[c][_col],end=' ')
+            l[c][_col]=-1
+        _row -= 1
+    _row+=1
+    _col-=1
+
+    for c in range(_col,r,-1):
+        if l[_row][c]!=-1:
+            print(l[_row][c],end=' ')
+            l[_row][c]=-1
+        _col-=1
+    _col+=1
+    _row+=1
+    print()
+```
+
+
+
+实话实说，很讨厌这种题，这里很可能是错的，不过有啥所谓呢？
+
+
+
+## 2.20 龟兔赛跑预测
+
+问题描述
+  　话说这个世界上有各种各样的兔子和乌龟，但是研究发现，所有的兔子和乌龟都有一个共同的特点——喜欢赛跑。于是世界上各个角落都不断在发生着乌龟和兔子的比赛，小华对此很感兴趣，于是决定研究不同兔子和乌龟的赛跑。他发现，兔子虽然跑比乌龟快，但它们有众所周知的毛病——骄傲且懒惰，于是在与乌龟的比赛中，一旦任一秒结束后兔子发现自己领先t米或以上，它们就会停下来休息s秒。对于不同的兔子，t，s的数值是不同的，但是所有的乌龟却是一致——它们不到终点决不停止。
+  　然而有些比赛相当漫长，全程观看会耗费大量时间，而小华发现只要在每场比赛开始后记录下兔子和乌龟的数据——兔子的速度v1（表示每秒兔子能跑v1米），乌龟的速度v2，以及兔子对应的t，s值，以及赛道的长度l——就能预测出比赛的结果。但是小华很懒，不想通过手工计算推测出比赛的结果，于是他找到了你——清华大学计算机系的高才生——请求帮助，请你写一个程序，对于输入的一场比赛的数据v1，v2，t，s，l，预测该场比赛的结果。
+ 输入格式
+ 　　输入只有一行，包含用空格隔开的五个正整数 ，其中(v1,v2<=100;t<=300;s<=10;l<=10000且为v1,v2的公倍数)
+ 输出格式
+ 　　输出包含两行，第一行输出比赛结果——一个大写字母“T”或“R”或“D”，分别表示乌龟获胜，兔子获胜，或者两者同时到达终点。
+ 　　第二行输出一个正整数，表示获胜者（或者双方同时）到达终点所耗费的时间（秒数）。
+ 样例输入
+ 10 5 5 2 20
+ 样例输出
+ D
+ 4
+ 样例输入
+ 10 5 5 1 20
+ 样例输出
+ R
+ 3
+ 样例输入
+ 10 5 5 3 20
+ 样例输出
+ T
+ 4
+
+```
+v1,v2,t,s,l=map(int,input().split())
+
+rabbitDistance=0
+turtleDistance=0
+
+_break=0
+count=0
+rest=False
+while rabbitDistance<l and turtleDistance<l:
+    if rabbitDistance-turtleDistance>=5:
+        # 开始休息
+        rest=True
+    if not rest:
+        rabbitDistance += v1
+    else:
+        _break+=1
+    if _break==s:
+        rest=False
+        _break=0
+
+    turtleDistance+=v2
+    count+=1
+
+    print(rabbitDistance,turtleDistance)
+
+if rabbitDistance<turtleDistance:
+    print('T')
+elif rabbitDistance>turtleDistance:
+    print('R')
+else:
+    print('D')
+
+print(count)
+```
+
+这种题就很简单了，不用说了
+
+
+
+## 2.21 芯片测试
+
+问题描述
+ 　　有n（2≤n≤20）块芯片，有好有坏，已知好芯片比坏芯片多。
+ 　　每个芯片都能用来测试其他芯片。用好芯片测试其他芯片时，能正确给出被测试芯片是好还是坏。而用坏芯片测试其他芯片时，会随机给出好或是坏的测试结果（即此结果与被测试芯片实际的好坏无关）。
+ 　　给出所有芯片的测试结果，问哪些芯片是好芯片。
+ 输入格式
+ 　　输入数据第一行为一个整数n，表示芯片个数。
+ 　　第二行到第n+1行为n*n的一张表，每行n个数据。表中的每个数据为0或1，在这n行中的第i行第j列（1≤i,  j≤n）的数据表示用第i块芯片测试第j块芯片时得到的测试结果，1表示好，0表示坏，i=j时一律为1（并不表示该芯片对本身的测试结果。芯片不能对本身进行测试）。
+ 输出格式
+ 　　按从小到大的顺序输出所有好芯片的编号
+ 样例输入
+ 3
+ 1 0 1
+ 0 1 0
+ 1 0 1
+ 样例输出
+ 1 3
+ **解题思路：**
+
+>  **重点是好芯片比坏芯片多**
+>  如果忽略这个问题就很难解决，本人开始你就不幸忽略了。。。
+>  既然好芯片比坏芯片多，那么我们只需记录每一列0的个数就行了，若个数超过n/2，则此芯片为坏芯片
+>  一个chip列表来记录芯片的好坏
+
+
+
+```
+n = int(input())
+
+arr = [[] for _ in range(n)]
+
+chip = [True for _ in range(n)]
+
+for i in range(n):
+    arr_ = input().split()
+    for j in range(n):
+        arr[i].append(int(arr_[j]))
+
+for i in range(n):
+    count = 0
+    for j in range(n):
+        if arr[j][i] == 0:
+            count += 1
+    if count > n / 2:
+        chip[i] = False
+
+for i in range(n):
+    if chip[i]:
+        print(i + 1, end=' ')
+
+```
+
+
+
+
+
+## 2.22 FJ字符串
+
+问题描述
+ 　　FJ在沙盘上写了这样一些字符串：
+ 　　A1 = “A”
+ 　　A2 = “ABA”
+ 　　A3 = “ABACABA”
+ 　　A4 = “ABACABADABACABA”
+ 　　… …
+ 　　你能找出其中的规律并写所有的数列AN吗？
+ 输入格式
+ 　　仅有一个数：N ≤ 26。
+ 输出格式
+ 　　请输出相应的字符串AN，以一个换行符结束。输出中不得含有多余的空格或换行、回车符。
+ 样例输入
+ 3
+ 样例输出
+ ABACABA
+
+
+
+找规律的题
+
+规律比较容易看出来的
+
+```
+letters=[chr(i) for i in range(ord('A'),ord('Z')+1)]
+# print(letters)
+result=''
+for i in range(int(input())):
+    result=result+letters[i]+result
+print(result)
+
+```
+
+
+
+## 2.23 sin之舞
+
+问题描述
+ 　　最近FJ为他的奶牛们开设了数学分析课，FJ知道若要学好这门课，必须有一个好的三角函数基本功。所以他准备和奶牛们做一个“Sine之舞”的游戏，寓教于乐，提高奶牛们的计算能力。
+ 　　不妨设
+ 　　An=sin(1–sin(2+sin(3–sin(4+…sin(n))…)
+ 　　Sn=(…(A1+n)A2+n-1)A3+…+2)An+1
+ 　　FJ想让奶牛们计算Sn的值，请你帮助FJ打印出Sn的完整表达式，以方便奶牛们做题。
+ 输入格式
+ 　　仅有一个数：N<201。
+ 输出格式
+ 　　请输出相应的表达式Sn，以一个换行符结束。输出中不得含有多余的空格或换行、回车符。
+ 样例输入
+ 3
+ 样例输出
+ ((sin(1)+3)sin(1–sin(2))+2)sin(1–sin(2+sin(3)))+1
+
+
+真的烦死了
+
+递归不出来
+
+```
+N=int(input())
+An=str(N)
+Sn=''
+def getAn(n,a):
+    if n<0:
+        return a
+    return getAn(n - 1,'{}{}sin({})'.format(n,'+' if n %2==0 else '-',a))
+
+
+def getSn(n,sn):
+    if n>N:
+        return sn
+    # print(sn)N-n+1
+    an=getAn(n,str(n))[2:]
+    print(an)
+    return getSn(n + 1,'({}){}+{}'.format(sn,an,n))
+
+# getAn(N)
+print(getSn(1,''))
+```
+
+就做到这里，傻逼题，气死我了
+
+
+
+> 答案在这里
+>
+> https://blog.csdn.net/qq_31910669/article/details/103641497
+
+
+
+```
+def A(n, k):
+
+    if n == k:
+        return
+
+    print('sin(%d' % (n + 1), end='')
+
+    if n + 1 != k:  # 若后边还有式子，判断是输出+号还是-号
+        if n % 2 == 1:
+            print('+', end='')
+        else:
+            print('-', end='')
+    else:  # 若后边没有式子，输出右括号结束
+        # 注意，这里只输出最后一次的右括号，前边左括号对应的右括号在S()函数中补全
+        print(')', end='')
+
+    n += 1
+
+    A(n, k)  # 递归调用自身
+
+
+def S(n):
+
+    k = t = 1
+
+    if n == 0:
+        return
+
+    for i in range(n - 1):
+        print('(', end='')
+
+    while n != 0:
+        A(0, k)
+        for i in range(t - 1):  # 不全A()函数中的括号
+            print(')', end='')
+        print('+%d' % n, end='')
+        if n != 1:  # 最后一项加完整数之和不必再输出右括号
+            print(')', end='')
+        k += 1
+        t += 1
+        n -= 1
+
+
+n = int(input())
+
+# A(0, 3)
+
+S(n)
+
+
+```
+
+
+
+
+
+## 2.24 数的读法
+
+问题描述
+ 　　Tom教授正在给研究生讲授一门关于基因的课程，有一件事情让他颇为头疼：一条染色体上有成千上万个碱基对，它们从0开始编号，到几百万，几千万，甚至上亿。
+ 　　比如说，在对学生讲解第1234567009号位置上的碱基时，光看着数字是很难准确的念出来的。
+ 　　所以，他迫切地需要一个系统，然后当他输入12 3456 7009时，会给出相应的念法：
+ 　　十二亿三千四百五十六万七千零九
+ 　　用汉语拼音表示为
+ 　　shi er yi san qian si bai wu shi liu wan qi qian ling jiu
+ 　　这样他只需要照着念就可以了。
+ 　　你的任务是帮他设计这样一个系统：给定一个阿拉伯数字串，你帮他按照中文读写的规范转为汉语拼音字串，相邻的两个音节用一个空格符格开。
+ 　　注意必须严格按照规范，比如说“10010”读作“yi wan ling yi shi”而不是“yi wan ling  shi”，“100000”读作“shi wan”而不是“yi shi wan”，“2000”读作“er qian”而不是“liang  qian”。
+ 输入格式
+ 　　有一个数字串，数值大小不超过2,000,000,000。
+ 输出格式
+ 　　是一个由小写英文字母，逗号和空格组成的字符串，表示该数的英文读法。
+ 样例输入
+ 1234567009
+ 样例输出
+ shi er yi san qian si bai wu shi liu wan qi qian ling jiu
+
+
+
+这种题快速过，因为没意思
+
+而且如果没有测试，复杂情况很多，实话实说不想做
+
+直接来看题解吧
+
+
+
+```
+n = input()
+
+num2pinyin = {'0': 'ling', '1': 'yi', '2': 'er', '3': 'san', '4': 'si', '5': 'wu',
+           '6': 'liu', '7': 'qi', '8': 'ba', '9': 'jiu'}
+unit2pinyin = {0: '', 1: '', 2: 'shi', 3: 'bai', 4: 'qian', 5: 'wan', 6: 'shi',
+               7: 'bai', 8: 'qian', 9: 'yi', 10: 'shi'}
+n = n + ' '
+
+l = len(n) - 1
+
+for i in range(l):
+    j = int(n[i])
+    if j != 0:  # 不为0时的读法
+        if (l - i == 2 or l - i == 6 or l - i == 10) and j == 1:
+            # 在十位，十万位，十亿位置且位于开头的1不读
+            # 例子：
+            # 1111111111 会读出 yi shi yi yi yi qian yi bai yi shi yi wan yi qian yi bai yi shi yi
+            # 111111 会读出 yi shi yi wan yi qian yi bai yi shi yi
+            # 11 会读出 yi shi yi
+            # 加上此约束后，则不会读出开头的 yi
+            if i != 0:  # 第一个1不输出1， 若不添加此条件，12会读出 yi shi er
+                print(num2pinyin['1'], end=' ')
+            print(unit2pinyin[2], end=' ')
+            continue
+        print(num2pinyin[n[i]], end=' ')
+        print(unit2pinyin[l - i], end=' ')
+    else:  # 处理0的读法问题
+        if l - i == 5 or l - i == 9:  # 如果此0是在万位或亿位，则读出万或亿
+            print(unit2pinyin[l - i], end=' ')
+        if n[i + 1] == '0' or i == l - 1:  # 如果后一位仍然为0，或者，当前是最后以为，则不读此0
+            continue
+        print(num2pinyin['0'], end=' ')  # 否则才读出这个零
+```
+
+
+
+
+
+
+
+## 2.25 完美的代价
+
+问题描述
+ 　　回文串，是一种特殊的字符串，它从左往右读和从右往左读是一样的。小龙龙认为回文串才是完美的。现在给你一个串，它不一定是回文的，请你计算最少的交换次数使得该串变成一个完美的回文串。
+ 　　交换的定义是：交换两个相邻的字符
+ 　　例如mamad
+ 　　第一次交换 ad : mamda
+ 　　第二次交换 md : madma
+ 　　第三次交换 ma : madam (回文！完美！)
+ 输入格式
+ 　　第一行是一个整数N，表示接下来的字符串的长度(N <= 8000)
+ 　　第二行是一个字符串，长度为N.只包含小写字母
+ 输出格式
+ 　　如果可能，输出最少的交换次数。
+ 　　否则输出Impossible
+ 样例输入
+ 5
+ mamad
+ 样例输出
+ 3
+
+这题有些难。。。应该是我想多了
+
+
+
+今天就先到这里了
 

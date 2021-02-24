@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afdcf1e8-f7d8-43d7-9b2d-a7e00fcb8c57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/N皇后.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/哈夫曼树.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/报时助手.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/递归计算.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/长整型加法.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/FJ字符串.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/sin之舞.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/回形取数.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/完美的代价.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/数的读法.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/芯片测试.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/官方训练-基础练习/龟兔赛跑.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/官方训练-基础练习/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/官方训练-基础练习/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/第十一届蓝桥杯大赛py第二次模拟（软件类真题）/4.py" beforeDir="false" afterPath="$PROJECT_DIR$/第十一届蓝桥杯大赛py第二次模拟（软件类真题）/4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +42,8 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
-  <component name="RunManager" selected="Python.N皇后">
-    <configuration name="序列求和" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.完美的代价">
+    <configuration name="数的读法" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LanQiao-Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -55,7 +55,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/序列求和.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/数的读法.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -64,7 +64,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="A+B问题" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="完美的代价" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LanQiao-Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -76,7 +76,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/A+B问题.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/完美的代价.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -85,7 +85,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="N皇后" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="龟兔赛跑" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LanQiao-Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -97,7 +97,49 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/N皇后.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/龟兔赛跑.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FJ字符串" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LanQiao-Learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/官方训练-基础练习" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/FJ字符串.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="特殊回文数" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LanQiao-Learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/官方训练" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练/特殊回文数.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -274,7 +316,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="特殊回文数" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sin之舞" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LanQiao-Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -282,11 +324,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/官方训练" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/官方训练-基础练习" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练/特殊回文数.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/官方训练-基础练习/sin之舞.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -297,9 +339,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.N皇后" />
-        <item itemvalue="Python.A+B问题" />
-        <item itemvalue="Python.序列求和" />
+        <item itemvalue="Python.完美的代价" />
+        <item itemvalue="Python.数的读法" />
+        <item itemvalue="Python.sin之舞" />
+        <item itemvalue="Python.FJ字符串" />
+        <item itemvalue="Python.龟兔赛跑" />
       </list>
     </recent_temporary>
   </component>
@@ -325,22 +369,38 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1245" y="259" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1613711391092" />
-    <state width="1877" height="315" key="GridCell.Tab.0.bottom" timestamp="1614099242470">
+    <state width="1877" height="341" key="GridCell.Tab.0.bottom" timestamp="1614151468282">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614099242470" />
-    <state width="1877" height="315" key="GridCell.Tab.0.center" timestamp="1614099242469">
+    <state width="1877" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614151468282" />
+    <state width="1877" height="341" key="GridCell.Tab.0.center" timestamp="1614151468282">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="315" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614099242469" />
-    <state width="1877" height="315" key="GridCell.Tab.0.left" timestamp="1614099242469">
+    <state width="1877" height="341" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614151468282" />
+    <state width="1877" height="341" key="GridCell.Tab.0.left" timestamp="1614151468282">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="315" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614099242469" />
-    <state width="1877" height="315" key="GridCell.Tab.0.right" timestamp="1614099242470">
+    <state width="1877" height="341" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614151468282" />
+    <state width="1877" height="341" key="GridCell.Tab.0.right" timestamp="1614151468282">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="315" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614099242470" />
+    <state width="1877" height="341" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614151468282" />
+    <state width="1877" height="341" key="GridCell.Tab.1.bottom" timestamp="1614151468283">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="341" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614151468283" />
+    <state width="1877" height="341" key="GridCell.Tab.1.center" timestamp="1614151468282">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="341" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614151468282" />
+    <state width="1877" height="341" key="GridCell.Tab.1.left" timestamp="1614151468282">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="341" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614151468282" />
+    <state width="1877" height="341" key="GridCell.Tab.1.right" timestamp="1614151468283">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="341" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614151468283" />
     <state x="592" y="193" key="SettingsEditor" timestamp="1613711444237">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
