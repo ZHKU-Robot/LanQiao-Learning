@@ -53,6 +53,8 @@
     - 贪心算法
     - 分治法
 ## 更新
+- 2021年2月24日11:46:14 更新 N皇后问题 [N-Queens](Hard/N-Queens) 
+    - 递归回溯
 - 2021年2月19日00:01:12 fixed bug
     - 准备开始做题
 - 2020年11月1日17:26:53 更新 杨辉三角2  [pascals-triangle-ii](Easy/pascals-triangle-ii) 
