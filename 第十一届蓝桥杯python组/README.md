@@ -448,7 +448,162 @@ print('{}%'.format(round(len(excellent)/len(scores))))
 
 那么如何计算给出直线的交点呢？只需要看看他们的令y 或者x相等时，值是不是一样的了
 
+注意是两两相交的交点，也就是要遍历 n（n-1） 次
+
+这题也不是难的，主要是判断出两直线相交的一些规律而已
+
+```
+
+lines=[]
+point=set()
+
+class line():
+    def __init__(self, a, b):
+        self.b = b
+        self.a = a
+def findThePointOfIntersection(n):
+    f=1
+    for i in range(n):
+        for j in range(i+1,n):
+            if lines[i].a!=lines[j].a: #即斜率不一样，是平行的时候
+                f=0
+                x=-(lines[i].b-lines[j].b)/(lines[i].a-lines[j].b)
+                y=lines[i].a*x+lines[i].b
+                point.add((x,y))
+                break
+    if f:
+        #都是平行的
+        return n+1
+    else:
+        if len(point)==1:
+            return 2*n
+        else:
+            return 2*n+1
+n=int(input())
+for i in range(n):
+    a,b=list(map(int,input().split()))
+    lines.append(line(a,b))
+print(findThePointOfIntersection(n))
+
+```
 
 
 
+
+
+## 最大成绩
+
+类似于这个
+
+```
+        3
+      4   5
+    6   7   8
+    ...
+```
+
+ 然后从上边走到底层，只有向左下或右下，且最多相差1，最后累计路线上的值，求最大的。 
+
+
+
+我们先把这个金字塔打印出来额
+
+```
+start=3
+n=5
+# n=1
+# 3
+
+ # n=2
+# 3
+#4 5
+
+# n=3
+#  3
+# 4 5
+#6 7 8
+
+# n-1个空格
+for i in range(n):
+    print(''.join([' ' for j in range(n-i-1)]),end='')
+    for j in range(i+1):
+        print(' ', end='')
+        print(start,end='')
+        start+=1
+    print()
+```
+
+大概像这样
+
+
+
+```
+     3
+    4 5
+   6 7 8
+  9 10 11 12
+ 13 14 15 16 17
+```
+
+我们用一个数组存起来啦
+
+没有例子，我不确定他的意思了
+
+就闲着也了
+
+```
+start=3
+n=5
+# n=1
+# 3
+
+ # n=2
+# 3
+#4 5
+
+# n=3
+#  3
+# 4 5
+#6 7 8
+
+# n-1个空格
+pyramid=[]
+for i in range(n):
+    print(''.join([' ' for j in range(n-i-1)]),end='')
+    t=[]
+    for j in range(i+1):
+        print(' ', end='')
+        print(start,end='')
+        t.append(start)
+        start+=1
+    pyramid.append(t)
+    print()
+print(pyramid)
+count=3
+curIndex=0
+for row in pyramid[1:]:
+    #从第一行开始，逐个向下找
+    for index,num in enumerate(row):
+        if abs(num-count)==1 and (index==curIndex or curIndex+1==index):
+            count += num
+            print("选中了",num,"现在的count是",count)
+
+
+            curIndex=index
+print(count)
+
+```
+
+```
+     3
+    4 5
+   6 7 8
+  9 10 11 12
+ 13 14 15 16 17
+[[3], [4, 5], [6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16, 17]]
+选中了 4 现在的count是 7
+选中了 6 现在的count是 13
+选中了 14 现在的count是 27
+27
+```
 
