@@ -1,5 +1,7 @@
 第十一届蓝桥杯 的真题额，赶紧试一试
 
+ ![attachment-img](img/courses_2786_attachments_1614060729925_2.png) 
+
 ## 贴门牌号
 
 找1，2020之间的数中包含2的数的个数
@@ -13,6 +15,8 @@ print(c)
 ```
 
 ##  2020
+
+ ![attachment-img](img/courses_2786_attachments_1614060729925_3.png) 
 
  给了一个300行300列的0和2数据，横着竖着斜着找有多少个2020 
 
@@ -161,6 +165,8 @@ print(obliqueCount)
 
 ## 跑步
 
+ ![attachment-img](img/courses_2786_attachments_1614060729925_4.png) 
+
 说小蓝从2000年几月几号跑的那天是星期几（记不清了），包含这天，一直跑到2020年10月1号（也包含这天）。其中每个月的1号跑2000米，逢周一也跑2000米，赶巧是1号也是周一也是跑2000米，其余的日子跑1000米，问一共跑了多少千米。
 
 这题如果常规入手会非常难，所以用一下python自带的日期库就舒服很多了
@@ -226,17 +232,25 @@ print(run)
 
 ## 排序
 
+ ![attachment-img](img/courses_2786_attachments_1614060729925_6.png) 
+
+  
+
 找出冒牌排序交换次数为100的字符串序列，最短，只有小写字母，不重复
 
 我是把他逆序，因为最小的放在最后边他移动的次数最多，这样保证字符串最短，最后到了o，但是o不在最后，在倒数几个位置
 
 
 
-？题目没看懂，没有例子，下一题
+有点意思了
+
+
 
 
 
 ## 蛇皮走位
+
+![attachment-img](img/courses_2786_attachments_1614060729925_5.png)
 
 这样的矩阵
 
@@ -344,6 +358,8 @@ Process finished with exit code 0
 
 ## 成绩合格率优秀率
 
+ ![attachment-img](img/courses_2786_attachments_1614060729925_7.png) 
+
 至少60 为及格
  至少85为优秀
  算及格率和优秀率
@@ -382,6 +398,8 @@ print('{}%'.format(round(len(excellent)/len(scores))))
 
 
 ## 平面切分
+
+ ![attachment-img](img/courses_2786_attachments_1614060729925_13.png) 
 
 直线由y = Ax + B 确定
  输入不同的A B
@@ -487,11 +505,17 @@ print(findThePointOfIntersection(n))
 
 ```
 
+## 单词分析
 
+ ![attachment-img](img/courses_2786_attachments_1614060729925_9.png)
 
+ ![attachment-img](img/courses_2786_attachments_1614060729925_10.png) 
 
+## 数字三角形
 
-## 最大成绩
+ ![attachment-img](img/courses_2786_attachments_1614060729925_11.png) 
+
+  ![attachment-img](img/courses_2786_attachments_1614060729925_12.png) 
 
 类似于这个
 
@@ -607,3 +631,12 @@ print(count)
 27
 ```
 
+
+
+## 装饰珠
+
+ ![attachment-img](img/courses_2786_attachments_1614060729925_14.png)
+
+ ![attachment-img](img/courses_2786_attachments_1614060729925_15.png)
+
+ ![attachment-img](img/courses_2786_attachments_1614060729925_16.png)   
