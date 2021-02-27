@@ -4,8 +4,8 @@
 #  Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 
-start=3
-n=5
+
+n=int(input())
 # n=1
 # 3
 
@@ -19,28 +19,50 @@ n=5
 #6 7 8
 
 # n-1个空格
+
+
 pyramid=[]
 for i in range(n):
-    print(''.join([' ' for j in range(n-i-1)]),end='')
+    
     t=[]
-    for j in range(i+1):
-        print(' ', end='')
-        print(start,end='')
-        t.append(start)
-        start+=1
-    pyramid.append(t)
-    print()
+    pyramid.append(list(map(int,input().split())))
 print(pyramid)
-count=3
+start=0
 curIndex=0
-for row in pyramid[1:]:
+leftStep=0
+rightStep=0
+for row in pyramid:
     #从第一行开始，逐个向下找
     for index,num in enumerate(row):
-        if abs(num-count)==1 and (index==curIndex or curIndex+1==index):
-            count += num
-            print("选中了",num,"现在的count是",count)
-
-
-            curIndex=index
-print(count)
+        left=0
+        right=0
+        if index==curIndex:#最近的左边的数
+            left=num
+            if index<len(row)-1:
+                right=row[index+1]
+            
+            print("left={} right={}".format(left,right))
+            print("index={},curindex={}".format(index,curIndex))
+            print("leftstep={} rightstep={}".format(leftStep,rightStep))
+            if leftStep==rightStep+1: #此时不能向左走了，必须向右走
+                rightStep+=1
+                start+=right
+                curIndex=index+1
+            elif leftStep+1==rightStep: #此时不能向右走了，必须向左走
+                leftStep+=1
+                start+=left
+                curIndex=index
+            else: #如果leftstep=rightstep 相等的话 选择较大的走
+                if left>right:
+                    leftStep+=1
+                    start+=left
+                    curIndex=index
+                else:
+                    rightStep+=1
+                    start+=right
+                    curIndex=index+1
+            print("count=",start)
+            break
+        
+print(start)
 

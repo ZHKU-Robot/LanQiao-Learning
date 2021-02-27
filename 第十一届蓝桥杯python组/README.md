@@ -244,7 +244,35 @@ print(run)
 
 有点意思了
 
+字符的排序一般都是按照ascii的顺序来的，找一个100次的交换的话，就直接从逆向做起呗
 
+首先写一个冒泡，再一个个试出来的，哈哈哈
+
+```
+string=[chr(i) for i in range(ord('o'),ord('a')-1,-1)]
+string[0],string[-12]=string[-12],string[0]
+
+def bubbleSort():
+    count=0    
+    for i in range(len(string)):
+        for j in range(len(string)-i-1):
+##            print(i,j)
+            if string[j+1]<string[j]:
+                string[j+1],string[j]=string[j],string[j+1]
+                count+=1
+    print(string)        
+    print(count)            
+print(string)
+bubbleSort()
+
+
+```
+
+```
+['l', 'n', 'm', 'o', 'k', 'j', 'i', 'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a']
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
+100
+```
 
 
 
@@ -511,6 +539,31 @@ print(findThePointOfIntersection(n))
 
  ![attachment-img](img/courses_2786_attachments_1614060729925_10.png) 
 
+这题在python充分的方法面前，都弱成渣了
+
+暴力一下应该过了
+
+```
+string=input()
+letters={chr(i):0 for i in range(ord('a'),ord('z'))}
+print(letters)
+for alpha in string:
+    letters[alpha]+=1
+print(letters)
+print(list(letters.keys())[list(letters.values()).index(max(letters.values()))])
+
+
+```
+
+```
+asinodia
+{'a': 0, 'b': 0, 'c': 0, 'd': 0, 'e': 0, 'f': 0, 'g': 0, 'h': 0, 'i': 0, 'j': 0, 'k': 0, 'l': 0, 'm': 0, 'n': 0, 'o': 0, 'p': 0, 'q': 0, 'r': 0, 's': 0, 't': 0, 'u': 0, 'v': 0, 'w': 0, 'x': 0, 'y': 0}
+{'a': 2, 'b': 0, 'c': 0, 'd': 1, 'e': 0, 'f': 0, 'g': 0, 'h': 0, 'i': 2, 'j': 0, 'k': 0, 'l': 0, 'm': 0, 'n': 1, 'o': 1, 'p': 0, 'q': 0, 'r': 0, 's': 1, 't': 0, 'u': 0, 'v': 0, 'w': 0, 'x': 0, 'y': 0}
+a
+```
+
+
+
 ## 数字三角形
 
  ![attachment-img](img/courses_2786_attachments_1614060729925_11.png) 
@@ -571,13 +624,16 @@ for i in range(n):
 
 我们用一个数组存起来啦
 
-没有例子，我不确定他的意思了
 
-就闲着也了
+
+但是这题绝对有问题，如果想得到题目中例子的27，必须这么走
+
+![1614398256528](img/1614398256528.png)
+
+但是很明显，向左走的步数已经超过向右走的步数+1了，所以肯定是不行的，所以最后我只写出了这个
 
 ```
-start=3
-n=5
+n=int(input())
 # n=1
 # 3
 
@@ -591,44 +647,53 @@ n=5
 #6 7 8
 
 # n-1个空格
+
+
 pyramid=[]
 for i in range(n):
-    print(''.join([' ' for j in range(n-i-1)]),end='')
+    
     t=[]
-    for j in range(i+1):
-        print(' ', end='')
-        print(start,end='')
-        t.append(start)
-        start+=1
-    pyramid.append(t)
-    print()
+    pyramid.append(list(map(int,input().split())))
 print(pyramid)
-count=3
+start=0
 curIndex=0
-for row in pyramid[1:]:
+leftStep=0
+rightStep=0
+for row in pyramid:
     #从第一行开始，逐个向下找
     for index,num in enumerate(row):
-        if abs(num-count)==1 and (index==curIndex or curIndex+1==index):
-            count += num
-            print("选中了",num,"现在的count是",count)
+        left=0
+        right=0
+        if index==curIndex:#最近的左边的数
+            left=num
+            if index<len(row)-1:
+                right=row[index+1]
+            
+            print("left={} right={}".format(left,right))
+            print("index={},curindex={}".format(index,curIndex))
+            print("leftstep={} rightstep={}".format(leftStep,rightStep))
+            if leftStep==rightStep+1: #此时不能向左走了，必须向右走
+                rightStep+=1
+                start+=right
+                curIndex=index+1
+            elif leftStep+1==rightStep: #此时不能向右走了，必须向左走
+                leftStep+=1
+                start+=left
+                curIndex=index
+            else: #如果leftstep=rightstep 相等的话 选择较大的走
+                if left>right:
+                    leftStep+=1
+                    start+=left
+                    curIndex=index
+                else:
+                    rightStep+=1
+                    start+=right
+                    curIndex=index+1
+            print("count=",start)
+            break
+        
+print(start)
 
-
-            curIndex=index
-print(count)
-
-```
-
-```
-     3
-    4 5
-   6 7 8
-  9 10 11 12
- 13 14 15 16 17
-[[3], [4, 5], [6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16, 17]]
-选中了 4 现在的count是 7
-选中了 6 现在的count是 13
-选中了 14 现在的count是 27
-27
 ```
 
 
