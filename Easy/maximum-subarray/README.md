@@ -201,3 +201,21 @@ class Solution:
 
 
 其实贪心算法也很有意思，可以去看看，在这里就不说了，因为我是想不出来的
+
+
+
+2021年2月27日14:12:59 再做了一遍，有点思路了
+
+```
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        maxSum=nums[0]
+        t=0
+        for num in nums:
+            t=max(num,num+t)
+            maxSum=max(t,maxSum)
+
+        return maxSum
+```
+
+![1614406417855](img/1614406417855.png)

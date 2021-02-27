@@ -6,17 +6,6 @@
 
  ![发现事情并不简单](img/20201026689124_bqzonA.jpg) 
 
-***
-本仓库包含以下内容：
-
-1. 现在只有yujiecong的单人solo
-
-**注：目前的顺序为简单难度从上到下**
-
-![1604218184270](img/1604218184270.png)
-
-深思熟虑后,决定先不碰二叉树,因为自己有些抗拒
-
 ## 内容列表
 - [前言](#前言)
 - [失败](#失败)
@@ -53,6 +42,12 @@
     - 贪心算法
     - 分治法
 ## 更新
+- 2021年2月27日16:46:57 更新 中等题 等我dp学好再来弄死你们，草
+    - [medium/Longest Palindromic Substring](medium/Longest Palindromic Substring)
+    - [medium/Unique Paths](medium/Unique Paths)
+- 2021年2月27日16:46:08 更新 最长子串，有点理解了 [Easy/maximum-subarray](Easy/maximum-subarray)
+    - 动态规划
+    - 滚动数组优化
 - 2021年2月24日11:46:14 更新 N皇后问题 [N-Queens](Hard/N-Queens) 
     - 递归回溯
 - 2021年2月19日00:01:12 fixed bug
