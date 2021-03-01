@@ -60,13 +60,13 @@ def factorial(num:int)->int:
         return num*factorial(num-1)
 string = "LANQIAO"
 leng=len(string)
-print(factorial(leng)/factorial(leng-leng))
+print(factorial(leng)//factorial(leng-leng))
 ```
 
 结果为
 
 ```
-5040.0
+5040
 ```
 
 当然，这样更快
@@ -225,7 +225,7 @@ class Solution:
 - 尝试简单构建法。
 - 假设我们有编写两对括号的所有有效方法。怎么用这个来得到编写三对括号的所有有效方法？
 
-从这个提示可以看出，应该是一道动态规划的题目，巧了，我不会
+从这个提示可以看出，应该是一道回溯的题目，巧了，我不会
 
 2021年2月17日14:23:54 直接看其他题解了
 

@@ -183,3 +183,223 @@ for i in range(2):
 
 草
 
+你以为学了一点dp后就会了？呵呵，你也太高看自己了
+
+还是不会。。
+
+> 卡特兰数：参考数论知识
+>
+> 考虑把 1-2n 从小到大依次放进矩阵中，可以发现每次放置的位置只能是第一行的最左空位或第二行的最左空位（否则左边一定会放一个更大的元素，而这不合法）。同时，如果放在第二行，那么要保证它上方已经有数字（否则会放一个更大的进去，同样不合法）。那么这样子可以把放在第一行看成 (，放在第二行看成 )，也就是计数长度为 2n的合法括号序列。根据卡特兰数，这个数量为
+> ------------------------------------------------
+> 版权声明：本文为CSDN博主「pxlsdz」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+> 原文链接：https://blog.csdn.net/sdz20172133/article/details/109217015
+>
+> ```
+> MOD = 2020
+> N = 3000
+> dp = [[0 for j in range(N)] for i in range(N)]
+> n = 1010
+> 
+> dp[0][0] = 1 # 不放也是方案
+>         
+> for i in range(0, n+1):
+>     for j in range(0, n+1):
+>         if i != 0 and i >= j-1: # 转移前的状态也要合法，即第一行的数量不小于第二行的数量
+>             dp[i][j] = (dp[i][j] + dp[i-1][j])%MOD
+>         if j != 0 :
+>             dp[i][j] = (dp[i][j] + dp[i][j-1])%MOD
+> print(dp[n][n])       
+> # 1340
+> 
+> ```
+
+
+
+
+
+## 试题 E: 完美平方数
+
+【问题描述】
+如果整个整数 X 本身是完全平方数，同时它的每一位数字也都是完全平方
+数，我们就称 X 是完美平方数。
+前几个完美平方数是 0、1、4、9、49、100、144……
+即第 1 个完美平方数是 0，第 2 个是 1，第 3 个是 4，……
+请你计算第 2020 个完美平方数是多少？
+【答案提交】
+这是一道结果填空题，你只需要算出结果后提交即可。本题的结果为一个
+整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。
+
+
+
+首先，这种题穷举是不可能的，像这样
+
+```
+temp=['0','1','4','9']
+index=0
+i=0
+while 1:
+    s=str(i*i)
+    i+=1
+    c=0
+    for t in temp:
+        c+=s.count(t)
+    if c==len(s):
+        print(s)
+        index+=1
+    if index==2021:
+        break
+```
+
+一定要用独特的，船新的想法
+
+但是我想不出来
+
+找了找，原来精度也有关，改成了这样
+
+```
+temp=['0','1','4','9']
+index=0
+i=0
+while 1:
+    s=str(int(i*i)) # here 
+    i+=1
+    c=0
+    for t in temp:
+        c+=s.count(t)
+    if c==len(s):
+        print(s)
+        index+=1
+    if index==2021:
+        break
+
+```
+
+唯一的区别就是快了点，但还是不行的
+
+不过给出答案就行，其他的不管了，让他慢慢跑，哈哈哈
+
+
+
+## 试题 F: 分类计数
+
+时间限制: 1.0s 内存限制: 512.0MB 本题总分：15 分
+【问题描述】
+输入一个字符串，请输出这个字符串包含多少个大写字母，多少个小写字 母，多少个数字。
+【输入格式】
+输入一行包含一个字符串。
+【输出格式】
+输出三行，每行一个整数，分别表示大写字母、小写字母和数字的个数。
+【样例输入】 1+a=Aab
+【样例输出】 1 3 1
+【评测用例规模与约定】 对于所有评测用例，字符串由可见字符组成，长度不超过 100。
+
+
+
+无他，送分而已
+
+```
+s=input()
+upper=0
+lower=0
+digit=0
+for i in s:
+    if i.isdigit():
+        digit+=1
+    elif i.islower():
+        lower+=1
+    elif i.isupper():
+        upper+=1
+print(upper,lower,digit)
+
+```
+
+## 试题 G: 八次求和
+
+时间限制: 1.0s 内存限制: 512.0MB 本题总分：20 分
+【问题描述】 给定正整数 n, 求 18 + 28 +···+ n8 mod 123456789 。其中 mod 表示取 余。
+【输入格式】
+输入的第一行包含一个整数 n。
+【输出格式】
+输出一行，包含一个整数，表示答案。
+【样例输入】 2
+【样例输出】 257
+【样例输入】 987654
+【样例输出】 43636805
+【评测用例规模与约定】 对于 20% 的评测用例，1≤n≤20。 对于 60% 的评测用例，1≤n≤1000。 对于所有评测用例，1≤n≤1000000。
+
+
+
+注意上面的 8 是指8次方哈哈哈
+
+快速幂
+
+注意python内置的pow函数是这样的
+
+-  `pow`(*x*, *y*[, *z*])
+
+    Return *x* to the power *y*; if *z* is present, return *x* to the power *y*, modulo *z* (computed more efficiently than `pow(x, y) % z`). The two-argument form `pow(x, y)` is equivalent to using the power operator: `x**y`. The arguments must have numeric types.  With mixed operand types, the coercion rules for binary arithmetic operators apply.  For [`int`](https://docs.python.org/3.7/library/functions.html?highlight=pow#int) operands, the result has the same type as the operands (after coercion) unless the second argument is negative; in that case, all arguments are converted to float and a float result is delivered.  For example, `10**2` returns `100`, but `10**-2` returns `0.01`.  If the second argument is negative, the third argument must be omitted.  If *z* is present, *x* and *y* must be of integer types, and *y* must be non-negative. 
+
+意思就是说，z是一个mod，以后不用在外面MOD了，直接在里面mod就行
+
+```
+MOD=123456789
+res=0
+n=int(input())
+for i in range(1,n+1):
+    res=(res+pow(i,8,MOD))%MOD
+print(res)    
+
+```
+
+
+
+## 试题 H: 字符串编码
+
+时间限制: 1.0s 内存限制: 512.0MB 本题总分：20 分
+【问题描述】
+小明发明了一种给由全大写字母组成的字符串编码的方法。对于每一个大 写字母，小明将它转换成它在 26 个英文字母中序号，即 A→1, B→2, … Z→ 26。 这样一个字符串就能被转化成一个数字序列： 比如 ABCXYZ → 123242526。 现在给定一个转换后的数字序列，小明想还原出原本的字符串。当然这样 的还原有可能存在多个符合条件的字符串。小明希望找出其中字典序最大的字 符串。
+【输入格式】
+一个数字序列。
+【输出格式】
+一个只包含大写字母的字符串，代表答案
+【样例输入】 123242526
+【样例输出】 LCXYZ
+【评测用例规模与约定】 对于 20% 的评测用例，输入的长度不超过 20。 对于所有评测用例，输入的长度不超过 200000
+
+这题用贪心算法做就行，意思就是优先选择最大的，真不要不大于26，就可以啦
+
+```
+nums=input()
+s=''
+i=0;
+while i<len(nums):
+    if i<len(nums)-1:
+        sli=int(nums[i:i+2])
+    print(sli)
+    if sli<=26:
+        s+=chr(ord('A')+sli-1)
+        i+=2
+    else:
+        s+=chr(ord('A')+int(i))
+        i+=1
+print(s)
+```
+
+## 试题 I: BST 插入节点问题
+
+时间限制: 1.0s 内存限制: 512.0MB 本题总分：25 分
+【问题描述】 给定一棵包含 N 个节点的二叉树，节点编号是 1 ∼ N。其中 i 号节点具有 权值 Wi，并且这些节点的权值恰好形成了一棵排序二叉树 (BST)。 现在给定一个节点编号 K，小明想知道，在这 N 个权值以外，有多少个整 数 X (即 X 不等于任何 Wi ) 满足：给编号为 K 的节点增加一个权值为 X 的子 节点，仍可以得到一棵 BST。 例如在下图中，括号外的数字表示编号、括号内的数字表示权值。即编号 1∼4 的节点权值依次是 0、10、20、30。
+如果 K = 1，那么答案为 0。因为 1 号节点已经有左右子节点，不能再增 加子节点了。 如果 K = 2，那么答案为无穷多。因为任何一个负数都可以作为 2 的左子 节点。 如果 K = 3，那么答案为 9。因为 X = 11,12,··· ,19 都可以作为 3 的左子 节点。
+【输入格式】
+第一行包含 2 个整数 N 和 K。 以下 N 行每行包含 2 个整数，其中第 i 行是编号为 i 的节点的父节点编号 Pi 和权值 Wi 。注意 Pi = 0 表示 i 是根节点。 输入保证是一棵 BST。
+试题 I: BST 插入节点问题 11
+第十一届蓝桥杯大赛软件类省赛 Python 大学组
+【输出格式】 一个整数代表答案。如果答案是无穷多，输出 −1。
+【样例输入】 4 3 0 10 1 0 1 20 3 30
+【样例输出】 9
+【评测用例规模与约定】 对于 60% 的评测用例，1≤ K ≤ N ≤100，0≤Wi ≤200，且 Wi 各不相同。 对于所有评测用例，1 ≤ K ≤ N ≤ 10000，0 ≤ Wi ≤ 100000000，且 Wi 各不 相同。
+------------------------------------------------
+不会，直接上BST了都。淦
+
+
+
