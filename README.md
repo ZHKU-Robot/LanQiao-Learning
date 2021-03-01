@@ -23,7 +23,7 @@
 - 直接插入排序(哨兵位)
 - 冒泡排序(以及进阶冒泡)
 - 递归(我也不会呜呜呜)
-- 动态规划
+- 动态规划 (正学)
 - 常用数据结构的增删改查
     - 链表 √
     - 栈 √
@@ -42,6 +42,9 @@
     - 贪心算法
     - 分治法
 ## 更新
+- 2021年2月28日19:20:36 自己试了一下dp的题 [Three Steps Problem LCCI](Easy/Three Steps Problem LCCI) 
+    - 动态规划
+    - 递推公式
 - 2021年2月27日16:46:57 更新 中等题 等我dp学好再来弄死你们，草
     - [medium/Longest Palindromic Substring](medium/Longest Palindromic Substring)
     - [medium/Unique Paths](medium/Unique Paths)
