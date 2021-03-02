@@ -73,6 +73,12 @@ ULRDLUURRR
 
  ![在这里插入图片描述](img/20200624152608525.png) 
 
+很显然我也不会
+
+
+
+
+
 ## 1.3 15.125GB
 
 【问题描述】
@@ -239,7 +245,6 @@ print(c)
 
 ------------------------------------------------
 
-
 ### 第一种，暴力法
 
 ```
@@ -267,3 +272,344 @@ print(c)
 
 
 
+### 第二种 dp
+
+但是我不会额
+
+GG
+
+```
+def dfs(pos, pre, limit):
+
+    if pos == -1:  # 单独一位算一个
+        return 1
+
+    if not limit and dp[pos][pre] != -1:  # 返回dp二维表中记录的值
+        return dp[pos][pre]
+
+    up = a[pos] if limit else 9
+
+    ans = 0
+
+    for i in range(pre, up + 1):
+        ans += dfs(pos - 1, i, limit and i == a[pos])
+
+    if not limit:  # 把算过的值记录在dp二维表中
+        dp[pos][pre] = ans
+
+    return ans
+
+
+def solve(num):
+    k = 0
+    while num != 0:
+        a[k] = num % 10
+        k += 1
+        num = num // 10
+
+    return dfs(k - 1, 0, True)
+
+
+a = [0 for _ in range(10)]
+
+dp = [[-1 for _ in range(10)] for _ in range(11)]
+
+n = int(input())
+
+print(solve(n) - 1)
+
+# print(a, dp, sep='\n')
+
+
+```
+
+## 1.8. 递增三元组
+
+【问题描述】
+在数列 a[1], a[2], …, a[n] 中，如果对于下标 i, j, k 满足 0<i<j<k<n+1 且 a[i]<a[j]<a[k]，则称 a[i], a[j], a[k] 为一组递增三元组，a[j]为递增三元组的中心。
+给定一个数列，请问数列中有多少个元素可能是递增三元组的中心。
+【输入格式】
+输入的第一行包含一个整数 n。
+第二行包含 n 个整数 a[1], a[2], …, a[n]，相邻的整数间用空格分隔，表示给定的数列。
+【输出格式】
+输出一行包含一个整数，表示答案。
+【样例输入】
+5
+1 2 5 3 5
+【样例输出】
+2
+【样例说明】
+a[2] 和 a[4] 可能是三元组的中心。
+【评测用例规模与约定】
+对于 50% 的评测用例，2 <= n <= 100，0 <= 数列中的数 <= 1000。
+对于所有评测用例，2 <= n <= 1000，0 <= 数列中的数 <= 10000。
+
+------------------------------------------------
+读读题还是很简单的，一个简单的比较而已
+
+```
+n = int(input())
+
+arr = list(map(int, input().split()))
+
+count = 0
+
+data = []
+
+for i in range(n):
+    for j in range(i + 1, n):
+        for k in range(j + 1, n):
+            if arr[i] < arr[j] < arr[k]:
+                if arr[j] not in data:
+                    data.append(arr[j])
+                    count += 1
+                # count += 1
+                # arr[j] = 0
+
+print(count)
+
+
+```
+
+不过复杂度是有点高了。。
+
+也不知道能不能AC..
+
+
+
+### 1.9. 音节判断
+
+【问题描述】
+小明对类似于 hello 这种单词非常感兴趣，这种单词可以正好分为四段，第一段由一个或多个辅音字母组成，第二段由一个或多个元音字母组成，第三段由一个或多个辅音字母组成，第四段由一个或多个元音字母组成。
+给定一个单词，请判断这个单词是否也是这种单词，如果是请输出yes，否则请输出no。
+元音字母包括 a, e, i, o, u，共五个，其他均为辅音字母。
+【输入格式】
+输入一行，包含一个单词，单词中只包含小写英文字母。
+【输出格式】
+输出答案，或者为yes，或者为no。
+【样例输入】
+lanqiao
+【样例输出】
+yes
+【样例输入】
+world
+【样例输出】
+no
+【评测用例规模与约定】
+对于所有评测用例，单词中的字母个数不超过100。
+
+------------------------------------------------
+很明显的贪婪算法
+
+直接贪婪走起
+
+```
+word=input()
+yuanyin=list('aeiou')
+if word[0] in yuanyin:
+    print('no')
+else:
+    i=1
+    a=1
+    while i<len(word):
+        if word[i] not in yuanyin:
+            i+=1
+        else:
+            a+=1
+            break
+
+    while i<len(word):
+        if word[i] in yuanyin:
+            i+=1
+        else:
+            a+=1
+            break
+
+    while i<len(word):
+        if word[i] not in yuanyin:
+            i+=1
+        else:
+            a+=1
+            break
+    while i<len(word):
+        if word[i] in yuanyin:
+            i+=1
+        else:
+            a+=1
+            break
+            
+        
+        
+    if a==4:
+        print('yes')
+    else:
+        print('no')
+```
+
+
+
+## 1.10. 长草
+
+【问题描述】
+小明有一块空地，他将这块空地划分为 n 行 m 列的小块，每行和每列的长度都为 1。
+小明选了其中的一些小块空地，种上了草，其他小块仍然保持是空地。
+这些草长得很快，每个月，草都会向外长出一些，如果一个小块种了草，则它将向自己的上、下、左、右四小块空地扩展，这四小块空地都将变为有草的小块。
+请告诉小明，k 个月后空地上哪些地方有草。
+【输入格式】
+输入的第一行包含两个整数 n, m。
+接下来 n 行，每行包含 m 个字母，表示初始的空地状态，字母之间没有空格。如果为小数点，表示为空地，如果字母为 g，表示种了草。
+接下来包含一个整数 k。
+【输出格式】
+输出 n 行，每行包含 m 个字母，表示 k 个月后空地的状态。如果为小数点，表示为空地，如果字母为 g，表示长了草。
+【样例输入】
+4 5
+.g...
+.....
+..g..
+.....
+2
+【样例输出】
+gggg.
+gggg.
+ggggg
+.ggg.
+【评测用例规模与约定】
+对于 30% 的评测用例，2 <= n, m <= 20。
+对于 70% 的评测用例，2 <= n, m <= 100。
+对于所有评测用例，2 <= n, m <= 1000，1 <= k <= 1000。
+
+这题很明显啊。是一个递归的思想，可以广度优先也可以深度优先啊
+
+```
+n,m=map(int,input().split())
+grass=[]
+for i in range(n):
+    grass.append(list(input()))
+k=int(input())
+mouth=0
+
+def dfs(mouth,i,j):
+    print(i,j,mouth)
+    if mouth==k or j>=m or i>=n or j<0 or i<0:
+        return
+    else:
+            if j<m-1:
+                grass[i][j+1]='g'
+                dfs(mouth+1,i,j+1)
+            if i<n-1:
+                grass[i+1][j]='g'
+                dfs(mouth+1,i+1,j)
+            if j>0:
+                grass[i][j-1]='g'
+                dfs(mouth+1,i,j-1)
+            if i>0:
+                grass[i-1][j]='g'
+                dfs(mouth+1,i-1,j)
+##            showgrass()
+            
+            
+def showgrass():
+    for row in grass:
+        print(''.join(row))
+ 
+
+pos=[]               
+for row in range(n):
+    for col in range(m):
+        if grass[row][col]=='g':
+            pos.append((row,col))
+for x,y in pos:
+    dfs(0,x,y)
+        
+showgrass()
+
+```
+
+不知道会不会AC额，下一题
+
+1.11. 序列计数
+
+【问题描述】
+小明想知道，满足以下条件的正整数序列的数量：
+1. 第一项为 n；
+2. 第二项不超过 n；
+3. 从第三项开始，每一项小于前两项的差的绝对值。
+请计算，对于给定的 n，有多少种满足条件的序列。
+【输入格式】
+输入一行包含一个整数 n。
+【输出格式】
+输出一个整数，表示答案。答案可能很大，请输出答案除以10000的余数。
+【样例输入】
+4
+【样例输出】
+7
+【样例说明】
+以下是满足条件的序列：
+4 1
+4 1 1
+4 1 2
+4 2
+4 2 1
+4 3
+4 4
+【评测用例规模与约定】
+对于 20% 的评测用例，1 <= n <= 5；
+对于 50% 的评测用例，1 <= n <= 10；
+对于 80% 的评测用例，1 <= n <= 100；
+对于所有评测用例，1 <= n <= 1000。
+
+------------------------------------------------
+
+
+
+
+
+
+啊这
+
+```
+n,m=map(int,input().split())
+grass=[]
+for i in range(n):
+    grass.append(list(input()))
+k=int(input())
+mouth=0
+
+def dfs(mouth,i,j):
+    print(i,j,mouth)
+    if mouth==k or j>=m or i>=n or j<0 or i<0:
+        return
+    else:
+            if j<m-1:
+                grass[i][j+1]='g'
+                dfs(mouth+1,i,j+1)
+            if i<n-1:
+                grass[i+1][j]='g'
+                dfs(mouth+1,i+1,j)
+            if j>0:
+                grass[i][j-1]='g'
+                dfs(mouth+1,i,j-1)
+            if i>0:
+                grass[i-1][j]='g'
+                dfs(mouth+1,i-1,j)
+##            showgrass()
+            
+            
+def showgrass():
+    for row in grass:
+        print(''.join(row))
+ 
+
+pos=[]               
+for row in range(n):
+    for col in range(m):
+        if grass[row][col]=='g':
+            pos.append((row,col))
+for x,y in pos:
+    dfs(0,x,y)
+        
+showgrass()
+
+```
+
+这里用的是深度优先的，当然稍微修改一下就可以做到广度优先了
