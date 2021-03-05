@@ -177,3 +177,40 @@ while 1:
 
 
 
+![1614941574158](img/1614941574158.png)
+
+![1614941581207](img/1614941581207.png)
+
+
+
+嗯。。这。送分题
+
+zip真的太好用啦！！！
+
+```
+mrows,ncols=map(int,input().split())
+pic=[]
+for i in range(mrows):
+    pic.append(list(map(int,input().split())))
+for rot in list(zip(*pic)):
+    print(*rot[::-1])
+```
+
+```
+3 4
+1 3 5 7
+9 8 7 6
+3 5 9 7
+
+3 9 1
+5 8 3
+9 7 5
+7 6 7
+```
+
+![1614942081895](img/1614942081895.png)
+
+一旦到了应用题，就不是那么简单了，读题都不明觉厉，所以。先到这吧
+
+
+
