@@ -42,6 +42,7 @@
     - 贪心算法
     - 分治法
 ## 更新
+- 2021年3月5日12:07:22 跳跃游戏 贪心  [jump-game](medium/jump-game) 
 - 2021年3月3日22:08:50 贪心算法  [Can Place Flowers](Easy/Can Place Flowers) 
 - 2021年2月28日19:20:36 自己试了一下dp的题 [Three Steps Problem LCCI](Easy/Three Steps Problem LCCI) 
     - 动态规划
