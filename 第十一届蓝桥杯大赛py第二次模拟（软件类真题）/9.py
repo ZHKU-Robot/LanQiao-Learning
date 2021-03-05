@@ -37,25 +37,27 @@ class GraphAdjList:
 
 class MGraph:
     def __init__(self):
-        self.graphAdjList=GraphAdjList(n,numEdges)
+        # n是顶点数，numEdges是边数
         self.vexs = [0 for _ in range(n)]
         self.arc = [self.vexs.copy() for _ in range(n)]
 
+        self.graphAdjList = GraphAdjList(n, numEdges)
 
     def createMGraph(self):
         for i in range(n):
             for j in range(i + 1, n):
                 x1, y1, h1 = test[i]
                 x2, y2, h2 = test[j]
+                # 村庄距离
                 cost = math.sqrt(math.pow(x1 - x2, 2) + math.pow(y1 - y2, 2)) \
                        + math.pow(h1 - h2, 2)
+
                 cost=round(cost,2)
                 self.arc[i][j] = cost
                 self.arc[j][i] = self.arc[i][j]
+
     def createALGraph(self):
-
         count=0
-
         for i in range(self.graphAdjList.numVertexes):
             self.graphAdjList.adjList[i].data=i
             self.graphAdjList.adjList[i].firstedge=None
@@ -69,6 +71,7 @@ class MGraph:
             e.adjvex=i
             e.next=self.graphAdjList.adjList[j].firstedge
             self.graphAdjList.adjList[j].firstedge
+
     def showMGraph(self):
         for a in self.arc:
             print(a)
