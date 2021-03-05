@@ -824,3 +824,36 @@ print(*maxList)
 
 
 
+## 不同字串
+
+一个字符串的非空子串是指字符串中长度至少为1的连续的一段字符组成的串。例如，字符串aaab有非空子串a, b, aa, ab, aaa, aab, aaab，一共7个。 注意在计算时，只算本质不同的串的个数。
+
+请问，字符串0100110001010001有多少个不同的非空子串？
+
+这是一道结果填空的题，你只需要算出结果后提交即可本题的结果为一 个整数，在提交答案时只填写这个整数，
+填写多余的内容将无法得分。
+
+
+
+由于是连续的，从第一个开始挨个遍历就行
+
+```
+##s = '0100110001010001'
+s = 'aaab'
+subLeng=1 #开始时 连续长度为1
+count = 0
+_set = set()  # 空集合，利用集合的不重复性
+while subLeng <= len(s):
+    _set.add(s[0:subLeng])
+    # 其实像是双指针的方式
+    for i in range(len(s) - subLeng):
+        _set.add(s[i+1:i+subLeng+1])  
+    subLeng += 1
+    count += len(_set)
+    print(_set)
+    _set.clear()
+##    每次的遍历可能有重复，所以要置空
+print(count)
+
+```
+
