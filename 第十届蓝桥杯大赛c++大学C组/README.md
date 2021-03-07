@@ -318,3 +318,76 @@ for second in range(1,t+1):
 {0: False, 1: True}
 ```
 
+ ![attachment-img](img/courses_2786_attachments_1605772014463_11.png) 
+
+![1615084372406](img/1615084372406.png)
+
+额，这。。这不是 正则吗，怎么跑这里来了
+
+只要简简单单一个匹配就行，再不济你也能用 双指针来匹配，哈哈哈
+
+```
+import re
+k=input()
+s=input()
+pa="Alice|Bob(.){1,"+k+"}Bob|Alice"
+print(pa)
+match=re.findall(pa,s)#
+print(len(match))
+
+```
+
+![1615084483974](img/1615084483974.png)
+
+这题看上去很简单，实际上也很简单
+
+```
+n=int(input())
+arr=list(map(int,input().split()))
+arr=sorted(arr)
+print(arr)
+sub=arr[1]-arr[0]
+i=1
+while i<len(arr)-1:
+    if arr[i+1]-arr[i]<sub:
+        sub=arr[i+1]-arr[i]
+    print(sub)
+    i+=1
+print((max(arr)-min(arr))//sub+1)
+        
+        
+
+```
+
+```
+[2, 4, 6, 10, 20]
+2
+2
+2
+10
+```
+
+```
+5
+2 3 5 8 10
+[2, 3, 5, 8, 10]
+1
+1
+1
+9
+```
+
+```
+6
+9 3 0 18 27
+[0, 3, 9, 18, 27]
+3
+3
+3
+10
+```
+
+![1615085355707](img/1615085355707.png)
+
+![1615085374706](img/1615085374706.png)
+
