@@ -42,6 +42,12 @@
     - 贪心算法
     - 分治法
 ## 更新
+
+-  2021年3月7日14:29:42 [Subarray Product Less Than K](medium/Subarray Product Less Than K) 
+    - 双指针
+- 2021年3月7日10:50:05 [Palindrome Partitioning](https://leetcode-cn.com/problems/palindrome-partitioning/)
+    - 回溯
+    - 双指针
 - 2021年3月5日12:07:22 跳跃游戏 贪心  [jump-game](medium/jump-game) 
 - 2021年3月3日22:08:50 贪心算法  [Can Place Flowers](Easy/Can Place Flowers) 
 - 2021年2月28日19:20:36 自己试了一下dp的题 [Three Steps Problem LCCI](Easy/Three Steps Problem LCCI) 
