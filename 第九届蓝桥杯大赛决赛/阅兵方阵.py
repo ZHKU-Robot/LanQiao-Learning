@@ -2,7 +2,7 @@
 import math
 num=1000
 count=0
-while count<12:
+while count!=12:
     count=0
     limit=int(math.sqrt(num))
     t=0
