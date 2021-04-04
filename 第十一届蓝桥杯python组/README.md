@@ -7,11 +7,11 @@
 找1，2020之间的数中包含2的数的个数
 
 ```
-c=0
+count=0
 for i in range(1,2021):
-    if '2' in str(i):
-        c+=1
-print(c)
+    count+=len(str(i).split('2'))-1
+print(count)
+
 ```
 
 ##  2020

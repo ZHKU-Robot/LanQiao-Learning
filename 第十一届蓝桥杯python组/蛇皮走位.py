@@ -23,12 +23,11 @@ for i in range(N):
         col = 0
         row = i
         while col <=N and row >= 0:
-
             martix[row][col] = t
             col += 1
             row -= 1
             t += 1
 
-for m in martix:
-    print(m)
-print(martix[19][19])
+# for m in martix:
+#     print(m)
+print(martix[1][1])
