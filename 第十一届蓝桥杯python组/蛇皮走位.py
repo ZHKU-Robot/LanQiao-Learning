@@ -30,4 +30,4 @@ for i in range(N):
 
 # for m in martix:
 #     print(m)
-print(martix[1][1])
+print(martix[19][19])

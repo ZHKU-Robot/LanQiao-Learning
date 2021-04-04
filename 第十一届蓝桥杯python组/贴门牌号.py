@@ -3,8 +3,7 @@
 #  Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
 #  Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
-c=0
+count=0
 for i in range(1,2021):
-    if '2' in str(i):
-        c+=1
-print(c)
+    count+=len(str(i).split('2'))-1
+print(count)
