@@ -3,12 +3,7 @@
 #  Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
 #  Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
-
 import math
-
-
-
-
 n = 4  # 村庄数量
 numEdges =int(( n * (n - 1)) /2)
 test = [[1, 1, 3],
@@ -40,9 +35,8 @@ class MGraph:
         # n是顶点数，numEdges是边数
         self.vexs = [0 for _ in range(n)]
         self.arc = [self.vexs.copy() for _ in range(n)]
-
         self.graphAdjList = GraphAdjList(n, numEdges)
-
+    # 邻接矩阵 无向图
     def createMGraph(self):
         for i in range(n):
             for j in range(i + 1, n):
@@ -94,34 +88,33 @@ class MGraph:
             if(not visisted[i]):
                 DFS(i)
     def prim(self):
-        min=65535
         adjvex=[0 for _ in range(n)] #相关顶点下标
         lowcost=[0 for _ in range(n)]#相关顶点间的权值
         for i in range(n):
             lowcost[i]=self.arc[0][i]
-
+        # lowcost 初始化 第一个结点的代价
         for i in range(1,n):
-            min=65536
+            min = 65536
             j=1
             k=0
-            while(j<n):
-                if lowcost[j]!=0 and lowcost[j]<min:
+            while(j<n): #循环所有顶点
+                if lowcost[j]!=0 and lowcost[j]<min: #如果顶点权值不等于0 并且 小于min
                     min=lowcost[j]
-                    k=j
+                    k=j # 最小值顶点的索引
                 j+=1
+            print("打印 当前最小顶点的权值关系")
             print("({}<->{})".format(adjvex[k],k))
             lowcost[k]=0
-            for j in range(1,n):
-                if(lowcost[j]!=0 and self.arc[k][j]<lowcost[j]):
-                    lowcost[j]=self.arc[k][j]
-                    adjvex[j]=k
+            for j in range(1,n): # 循环所有顶点
+                if(lowcost[j]!=0 and self.arc[k][j]<lowcost[j]): #若下标为k顶点的各边权值小于此前顶点未被加入生成树权值
+                    lowcost[j]=self.arc[k][j] #将较小权值存入lowcast
+                    adjvex[j]=k #将下标为k的顶点存入adjvex
         print('lowcost=', lowcost)
         print('adjvex',adjvex)
 
         # 计算总共的代价
         sum=0
         for i,v in enumerate(adjvex):
-
             sum+=self.arc[i][v]
         print("sum=",sum)
 

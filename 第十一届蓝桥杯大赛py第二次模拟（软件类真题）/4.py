@@ -15,7 +15,5 @@ class Solution:
         nQueen('', 0, 0)
         return res
 
-
-
 s=Solution()
 print(s.generateParenthesis(4))

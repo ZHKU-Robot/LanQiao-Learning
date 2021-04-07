@@ -355,57 +355,59 @@ odqtldr
 观察一段时间代码规律后，写成这样哦了
 
 ```python
-n=4
+n=6
 start=1
 l=[[0 for i in range(n) ] for j in range(n)]
 col=0
 row=0
 max=n*n
+result=[]
 def arrRowSet(row1,row2):
     global start,row
     direation=1 if row1-row2<0 else -1
     for i in range(row1,row2,direation):
+
         l[i][col]=start
         start+=1
         row+=direation
+    row -= 1 if row == 6 else 0
 def arrColSet(col1, col2):
     global start,col
     direation=1 if col1-col2<0 else -1
     for i in range(col1, col2,direation):
+
         l[row][i] = start
         start += 1
         col+=direation
-    col-=1
-for i in range(n//2+1):
+    col-=1 if col==6  else 0
+def arrprint():
+    for a in l:
+        print(a)
+    print()
+for i in range(n//2):
     arrColSet(i,n-i)
     arrRowSet(i+1,n-i)
-    arrColSet(n-i-2,i)
-    arrRowSet(n-i-1,i)
-    row+=1
-    col+=1
-for a in l:
-    print(a)
+    arrColSet(n-i-2,i-1)
+    arrRowSet(n-i-2,i)
+arrprint()
 
-```
-
+print(l)
 
 
 ```
-[1, 2, 3, 4, 5]
-[16, 17, 18, 19, 6]
-[15, 26, 25, 20, 7]
-[14, 23, 22, 21, 8]
-[13, 12, 11, 10, 9]
-```
+
+
+
+
 
 
 
 ```
 [1, 2, 3, 4, 5, 6]
 [20, 21, 22, 23, 24, 7]
-[19, 38, 39, 40, 25, 8]
+[19, 32, 33, 34, 25, 8]
 [18, 31, 36, 35, 26, 9]
-[17, 30, 37, 28, 27, 10]
+[17, 30, 29, 28, 27, 10]
 [16, 15, 14, 13, 12, 11]
 ```
 

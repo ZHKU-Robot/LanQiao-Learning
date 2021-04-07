@@ -12,6 +12,9 @@ class line():
     def __init__(self, a, b):
         self.b = b
         self.a = a
+    def __str__(self):
+        return f"y={self.a}x+{self.b}"
+
 def findThePointOfIntersection(n):
     f=1
     for i in range(n):
@@ -34,4 +37,5 @@ n=int(input())
 for i in range(n):
     a,b=list(map(int,input().split()))
     lines.append(line(a,b))
+print(*lines)
 print(findThePointOfIntersection(n))

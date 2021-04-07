@@ -5,64 +5,57 @@
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 
 
-n=int(input())
-# n=1
-# 3
-
- # n=2
-# 3
-#4 5
-
-# n=3
-#  3
-# 4 5
-#6 7 8
+# n=int(input())
 
 # n-1个空格
 
+inp= [[7],
+      [3 ,8],
+      [8, 1 ,0],
+      [2, 7, 4, 4],
+      [4 ,5, 2 ,6, 5]]
+n=len(inp)
+# 初始化
+dp=[[0 for j in range(i)] for i in range(1,n+1)]
+dp2=[[(0,0) for j in range(i)] for i in range(1,n+1)]
+dp[0][0]=7
 
-pyramid=[]
-for i in range(n):
-    
-    t=[]
-    pyramid.append(list(map(int,input().split())))
-print(pyramid)
-start=0
-curIndex=0
-leftStep=0
-rightStep=0
-for row in pyramid:
-    #从第一行开始，逐个向下找
-    for index,num in enumerate(row):
-        left=0
-        right=0
-        if index==curIndex:#最近的左边的数
-            left=num
-            if index<len(row)-1:
-                right=row[index+1]
-            
-            print("left={} right={}".format(left,right))
-            print("index={},curindex={}".format(index,curIndex))
-            print("leftstep={} rightstep={}".format(leftStep,rightStep))
-            if leftStep==rightStep+1: #此时不能向左走了，必须向右走
-                rightStep+=1
-                start+=right
-                curIndex=index+1
-            elif leftStep+1==rightStep: #此时不能向右走了，必须向左走
-                leftStep+=1
-                start+=left
-                curIndex=index
-            else: #如果leftstep=rightstep 相等的话 选择较大的走
-                if left>right:
-                    leftStep+=1
-                    start+=left
-                    curIndex=index
-                else:
-                    rightStep+=1
-                    start+=right
-                    curIndex=index+1
-            print("count=",start)
-            break
-        
-print(start)
+
+def dpPrint():
+    for i in dp:
+        print((n-len(i)) * ' ', end='')
+        print(*i)
+def dp2Print():
+    for i in dp2:
+        print((n-len(i)) * '  ', end='')
+        print(*i)
+# 先计算初始状态
+# 由于只能走两步
+for i in range(1,3):
+    dp[i][0]=inp[i][0]+dp[i-1][0]
+    dp[i][-1]=inp[i][-1]+dp[i-1][-1]
+for i in range(1,n):
+    dp2[i][0]= (1 + dp2[i-1][0][0],0)
+    dp2[i][-1]= ( 0, dp2[i-1][-1][1]+1)
+
+for row in range(2,n):
+    for col in range(1,len(inp[row])-1):
+        dp2[row][col] = (max([dp2[row - 1][col - 1][0], dp2[row - 1][col][0]]), max([dp2[row - 1][col][1], dp2[row - 1][col - 1][1]]))
+
+# dpPrint()
+# 从第3行开始第1个到倒数第二个开始
+
+for row in range(2,n):
+    for col in range(1,len(inp[row])-1):
+        lh=inp[row][col]+dp[row-1][col-1]
+        rh=inp[row][col]+dp[row-1][col]
+        left=dp2[row][col][0]
+        right=dp2[row][col][1]
+        if abs(left-right)<=1: #
+            # 只能走右边
+            dp[row][col] = rh if rh>lh else lh
+        # 取两个的最大值
+
+dp2Print()
+dpPrint()
 
