@@ -6,7 +6,7 @@ k=int(input())
 mouth=0
 
 def dfs(mouth,i,j):
-    print(i,j,mouth)
+
     if mouth==k or j>=m or i>=n or j<0 or i<0:
         return
     else:

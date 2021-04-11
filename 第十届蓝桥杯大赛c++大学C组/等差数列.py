@@ -10,5 +10,3 @@ while i<len(arr)-1:
     print(sub)
     i+=1
 print((max(arr)-min(arr))//sub+1)
-        
-        

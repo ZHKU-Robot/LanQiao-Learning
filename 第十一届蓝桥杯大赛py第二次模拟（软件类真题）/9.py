@@ -89,16 +89,18 @@ class MGraph:
                 DFS(i)
     def prim(self):
         adjvex=[0 for _ in range(n)] #相关顶点下标
-        lowcost=[0 for _ in range(n)]#相关顶点间的权值
+        lowcost=[0 for _ in range(n)]#相关顶点间的权值 如果是0 代表已经加入最小生成树
+
         for i in range(n):
             lowcost[i]=self.arc[0][i]
+        print(lowcost)
         # lowcost 初始化 第一个结点的代价
         for i in range(1,n):
             min = 65536
             j=1
             k=0
             while(j<n): #循环所有顶点
-                if lowcost[j]!=0 and lowcost[j]<min: #如果顶点权值不等于0 并且 小于min
+                if lowcost[j]!=0 and lowcost[j]<min: #如果顶点权值不等于0(已经是生成树的顶点) 并且 小于min
                     min=lowcost[j]
                     k=j # 最小值顶点的索引
                 j+=1
@@ -106,11 +108,12 @@ class MGraph:
             print("({}<->{})".format(adjvex[k],k))
             lowcost[k]=0
             for j in range(1,n): # 循环所有顶点
-                if(lowcost[j]!=0 and self.arc[k][j]<lowcost[j]): #若下标为k顶点的各边权值小于此前顶点未被加入生成树权值
+                if(lowcost[j]!=0 and self.arc[k][j]<lowcost[j]): # 如果是0 代表已经加入最小生成树
+
                     lowcost[j]=self.arc[k][j] #将较小权值存入lowcast
                     adjvex[j]=k #将下标为k的顶点存入adjvex
-        print('lowcost=', lowcost)
-        print('adjvex',adjvex)
+            print('lowcost=', lowcost)
+            print('adjvex',adjvex)
 
         # 计算总共的代价
         sum=0

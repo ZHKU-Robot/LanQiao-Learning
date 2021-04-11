@@ -7,7 +7,6 @@ for i in range(m):
     idList.append(id_)
 
 prior=[0 for i in range(n)]
-
 buf={k:False for k in range(n)}
 for second in range(1,t+1):
     if second in tsList:
