@@ -10,7 +10,6 @@
 - [前言](#前言)
 - [失败](#失败)
 - [更新](#更新)
-- [目录](#目录)
 - [背景](#背景)
 - [相关仓库](#相关仓库)
 - [维护者](#维护者)
@@ -20,29 +19,38 @@
 很痛苦,如果不熟悉排序算法，你可能会半天憋不出一个代码或者说半天调试不对代码..  
 所以请确保你对以下算法熟悉.
 
-- 直接插入排序(哨兵位)
-- 冒泡排序(以及进阶冒泡)
-- 递归(我也不会呜呜呜)
-- 动态规划 (正学)
+- 递归(只会简单的)
+    - 回溯 (不熟)
+- 动态规划 (会简单的)
+- 贪心 (会一点)
 - 常用数据结构的增删改查
     - 链表 √
     - 栈 √
-    - 队列 ×
-    - 二叉树 ×
+    - 队列 √
+        - FIFO
+    - 二叉树 √
+        - 4种遍历 √
+    - 图 
+        - dfs && bfs 会一点
+        - 最小生成树 写不出来但是理解
+            - prim
 ## 失败
 记录一下没做出来的题
--  [climbing-stairs](Easy/climbing-stairs) 
-    - 动态规划(dp)
-    - 滚动数组
-    - 递归
-    - 找规律(斐波那契数列)
-- [Maximum Subarray](./Easy/maximum-subarray)
-    - 滚动数组
-    - 动态规划
-    - 贪心算法
-    - 分治法
+
+已解决..
+
 ## 更新
 
+-  2021年4月11日13:43:18  [剑指 Offer 07. 重建二叉树](medium/剑指 Offer 07. 重建二叉树) 
+-  2021年4月11日13:42:57  [从尾到头打印链表 LCOF](Easy/从尾到头打印链表 LCOF) 
+-  2021年4月11日13:25:35  [ti-huan-kong-ge-lcof](Easy/ti-huan-kong-ge-lcof) 
+-  2021年4月11日12:38:59  [shu-zu-zhong-zhong-fu-de-shu-zi-lcof](Easy/shu-zu-zhong-zhong-fu-de-shu-zi-lcof) 
+-  2021年4月11日11:45:33  [Route Between Nodes LCCI](medium/Route Between Nodes LCCI) 
+-  2021年4月11日11:38:37  [binary-tree-inorder-traversal](medium/binary-tree-inorder-traversal) 
+-  2021年4月11日11:18:55  [Contains Duplicate](Easy/Contains Duplicate) 
+    -  简单题
+-  2021年4月11日10:21:28 更新 [combination-sum-iii](medium/combination-sum-iii) 
+    -  回溯
 -  2021年3月7日14:29:42 [Subarray Product Less Than K](medium/Subarray Product Less Than K) 
     - 双指针
 - 2021年3月7日10:50:05 [Palindrome Partitioning](https://leetcode-cn.com/problems/palindrome-partitioning/)
@@ -151,43 +159,10 @@
 - 2020年10月11日20:47:43 yujiecong更新[反转整数](./Easy/reverse-integer)
     - 防止溢出
     - 整数翻转
-## 目录
-### 简单题
-1. [两数之和](./Easy/two-sum)
-2. [反转整数](./Easy/reverse-integer)
-3. [回文数](./Easy/palindrome-number)
-4. [罗马数字转整数](./Easy/roman-to-integer)
-5. [有序数组的平方](./Easy/squares-of-a-sorted-array)
-6. [最长公共前缀](./Easy/longest-common-prefix)
-7. [用队列实现栈](./Easy/implement-stack-using-queues)
-8. [有效的括号](./Easy/valid-parentheses)
-9. [合并两个有序链表](./Easy/merge-two-sorted-lists)
-10. [删除排序数组中的重复项](./Easy/remove-duplicates-from-sorted-array)
-11. [移除元素](./Easy/remove-element)
-12. [实现 strStr](./Easy/implement-strstr/)
-13. [搜索插入位置](./Easy/search-insert-position/)
-14. [外观数列](./Easy/count-and-say/)
-15. [Maximum Subarray](./Easy/maximum-subarray)
-16. [length-of-last-word](Easy/length-of-last-word) 
-17.  [plus-one](Easy/plus-one) 
-18.  [add-binary](Easy/add-binary) 
-19.  [sqrtx](Easy/sqrtx) 
-20.   [climbing-stairs](Easy/climbing-stairs) 
-21.  [remove-duplicates-from-sorted-list](Easy/remove-duplicates-from-sorted-list) 
-22. [merge-sorted-array](Easy/merge-sorted-array) 
-
-
-### 中等题
-
-1. 
-### 困难题
-1. 
 ## 背景
 给自己加点料，建议大家多多提交issue和pr  
 
-*注:yujiecong把自己的仓库移过来了,以后只在这里更新*   
-
-> 话说搞robot算法肯定必不可少的，所以你们加油好吗？就算没有robot，就当开胃小菜吧，希望我们越来越好!
+*注:[@yujiecong](https://github.com/yujiecong)把自己的仓库移过来了,以后只在这里更新*   
 
 __这个仓库的目标是：__
 
