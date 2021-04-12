@@ -2,7 +2,11 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/ZHKU-Robot/Robot-algorithm-learning)
 
-一起去LeetCode刷题吧~~欢迎clone到本地修改并pull
+__这个仓库的目标是：__
+
+1. 无聊的时候，能够来这里完善一下这里的内容
+2. 提交issue并且引起讨论
+3. 提升自己的思维能力，代码能力
 
  ![发现事情并不简单](img/20201026689124_bqzonA.jpg) 
 
@@ -27,9 +31,9 @@
     - 链表 √
     - 栈 √
     - 队列 √
-        - FIFO
     - 二叉树 √
         - 4种遍历 √
+        - 重构二叉树
     - 图 
         - dfs && bfs 会一点
         - 最小生成树 写不出来但是理解
@@ -37,10 +41,16 @@
 ## 失败
 记录一下没做出来的题
 
-已解决..
+https://github.com/yujiecong/LanQiao-Learning 这里有很多做不出的啊啊
 
 ## 更新
 
+-  2021年4月13日00:03:26  [剑指 Offer 12. 矩阵中的路径](medium/剑指 Offer 12. 矩阵中的路径) 
+    -  真的让我明白了 什么是回溯? 印象真的深刻
+-  2021年4月12日18:30:00 [剑指 Offer 11. 旋转数组的最小数字](Easy/剑指 Offer 11. 旋转数组的最小数字) 
+-  2021年4月12日18:29:46  [剑指 Offer 10- II. 青蛙跳台阶问题](Easy/剑指 Offer 10- II. 青蛙跳台阶问题) 
+-  2021年4月12日18:29:37  [剑指 Offer 10- I. 斐波那契数列](Easy/剑指 Offer 10- I. 斐波那契数列) 
+-  2021年4月12日18:29:23  [剑指 Offer 09. 用两个栈实现队列](Easy/剑指 Offer 09. 用两个栈实现队列) 
 -  2021年4月11日13:43:18  [剑指 Offer 07. 重建二叉树](medium/剑指 Offer 07. 重建二叉树) 
 -  2021年4月11日13:42:57  [从尾到头打印链表 LCOF](Easy/从尾到头打印链表 LCOF) 
 -  2021年4月11日13:25:35  [ti-huan-kong-ge-lcof](Easy/ti-huan-kong-ge-lcof) 
@@ -160,15 +170,9 @@
     - 防止溢出
     - 整数翻转
 ## 背景
-给自己加点料，建议大家多多提交issue和pr  
+大家一起内卷
 
-*注:[@yujiecong](https://github.com/yujiecong)把自己的仓库移过来了,以后只在这里更新*   
 
-__这个仓库的目标是：__
-
-1. 无聊的时候，能够来这里完善一下这里的内容
-2. 提交issue并且引起讨论
-3. 提升自己的思维能力，代码能力
 
 
 ## 维护者
