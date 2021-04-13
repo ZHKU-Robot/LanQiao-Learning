@@ -35,6 +35,8 @@
 
 显然，可以用一个值维护当前能跳的最远距离，当最远距离等于数组尾时成功，然后结束，否则视作失败
 
+很明显是贪心的
+
 ```
 class Solution:
     def canJump(self, nums:list) -> bool:

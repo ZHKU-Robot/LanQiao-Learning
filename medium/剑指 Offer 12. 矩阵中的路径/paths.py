@@ -7,7 +7,6 @@ class Solution:
         cols = len(board[0])
 
         def dfs(x, y, idx):
-
             if idx == len(word):
                 return True
             for d in direation:
