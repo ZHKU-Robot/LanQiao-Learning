@@ -46,9 +46,11 @@ https://github.com/yujiecong/LanQiao-Learning 这里有很多做不出的啊啊
 
 ## 更新
 
--  2021年4月13日21:42:27  [er-jin-zhi-zhong-1de-ge-shu-lcof](Easy\er-jin-zhi-zhong-1de-ge-shu-lcof) 
+-   2021年4月13日23:56:26 [shu-zhi-de-zheng-shu-ci-fang-lcof](medium/shu-zhi-de-zheng-shu-ci-fang-lcof) 
+-  2021年4月13日21:42:27  [er-jin-zhi-zhong-1de-ge-shu-lcof](Easy/er-jin-zhi-zhong-1de-ge-shu-lcof) 
 -  2021年4月13日12:37:51  [剑指 Offer 14- I. 剪绳子](medium/jian-sheng-zi-lcof) 
     -  没有动力做嘤嘤嘤
+    -  动态规划的 例题~
 -  2021年4月13日12:06:19  [剑指 Offer 13. 机器人的运动范围](medium/剑指 Offer 13. 机器人的运动范围) 
     -  第二次教我 什么是回溯?	
 -  2021年4月13日00:03:26  [剑指 Offer 12. 矩阵中的路径](medium/剑指 Offer 12. 矩阵中的路径) 
