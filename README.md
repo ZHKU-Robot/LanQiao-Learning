@@ -46,6 +46,7 @@ https://github.com/yujiecong/LanQiao-Learning 这里有很多做不出的啊啊
 
 ## 更新
 
+-  2021年4月13日21:42:27  [er-jin-zhi-zhong-1de-ge-shu-lcof](Easy\er-jin-zhi-zhong-1de-ge-shu-lcof) 
 -  2021年4月13日12:37:51  [剑指 Offer 14- I. 剪绳子](medium/jian-sheng-zi-lcof) 
     -  没有动力做嘤嘤嘤
 -  2021年4月13日12:06:19  [剑指 Offer 13. 机器人的运动范围](medium/剑指 Offer 13. 机器人的运动范围) 
