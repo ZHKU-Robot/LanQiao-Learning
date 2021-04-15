@@ -44,10 +44,31 @@ __这个仓库的目标是：__
 
 https://github.com/yujiecong/LanQiao-Learning 这里有很多做不出的啊啊
 
+- 2021年4月14日12:32:16  [biao-shi-shu-zhi-de-zi-fu-chuan-lcof](medium/biao-shi-shu-zhi-de-zi-fu-chuan-lcof) 
+- 2021年4月14日12:36:20  [zheng-ze-biao-da-shi-pi-pei-lcof](Easy\zheng-ze-biao-da-shi-pi-pei-lcof) 
+
+
+
 ## 更新
 
+-   2021年4月14日16:50:02  [he-bing-liang-ge-pai-xu-de-lian-biao-lcof](Easy\he-bing-liang-ge-pai-xu-de-lian-biao-lcof) 
+    -   递归合成链表
+-   2021年4月14日15:33:43  [fan-zhuan-lian-biao-lcof](Easy\fan-zhuan-lian-biao-lcof) 
+    -   反转链表 基本功
+-   2021年4月14日14:01:57  [lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof](Easy/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof) 
+    -   链表的操作
+-   2021年4月14日12:34:19  [diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof](Easy/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof) 
+    -   双指针
+    -   原理可以抽象成函数
+-   2021年4月14日12:31:58  [shan-chu-lian-biao-de-jie-dian-lcof](Easy/shan-chu-lian-biao-de-jie-dian-lcof) 
+    -   注意判断输入
+    -   普通的链表删除
+-   2021年4月14日12:30:18  [da-yin-cong-1dao-zui-da-de-nwei-shu-lcof](Easy/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof) 
+    -   大数问题
 -   2021年4月13日23:56:26 [shu-zhi-de-zheng-shu-ci-fang-lcof](medium/shu-zhi-de-zheng-shu-ci-fang-lcof) 
--  2021年4月13日21:42:27  [er-jin-zhi-zhong-1de-ge-shu-lcof](Easy/er-jin-zhi-zhong-1de-ge-shu-lcof) 
+    -   快速幂
+-   2021年4月13日21:42:27  [er-jin-zhi-zhong-1de-ge-shu-lcof](Easy/er-jin-zhi-zhong-1de-ge-shu-lcof) 
+    -  位操作
 -  2021年4月13日12:37:51  [剑指 Offer 14- I. 剪绳子](medium/jian-sheng-zi-lcof) 
     -  没有动力做嘤嘤嘤
     -  动态规划的 例题~
