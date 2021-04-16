@@ -24,7 +24,7 @@ __这个仓库的目标是：__
 所以请确保你对以下算法熟悉.
 
 - 递归(只会简单的)
-    - 回溯 (不熟)
+    - 回溯 (不熟) 较抽象 需要画图分析
 - 动态规划 (会简单的)
 - 贪心 (会一点)
 - 常用数据结构的增删改查
@@ -36,7 +36,6 @@ __这个仓库的目标是：__
         - 重构二叉树
     - 图 
         - dfs && bfs 会一点
-        - 回溯 不一定写得出来
         - 最小生成树 写不出来但是理解
             - prim
 ## 失败
@@ -51,6 +50,13 @@ https://github.com/yujiecong/LanQiao-Learning 这里有很多做不出的啊啊
 
 ## 更新
 
+-   2021年4月16日15:04:02  [subsets](medium\subsets) 
+    -   回溯 递归 集合
+-   2021年4月16日14:59:14  [permutations-ii](medium\permutations-ii) 
+    -   观察规律防止重复
+    -   set 集合去重复
+-   2021年4月16日12:51:28  [permutations](medium/permutations) 
+    -   回溯 全排列
 -   2021年4月14日16:50:02  [he-bing-liang-ge-pai-xu-de-lian-biao-lcof](Easy\he-bing-liang-ge-pai-xu-de-lian-biao-lcof) 
     -   递归合成链表
 -   2021年4月14日15:33:43  [fan-zhuan-lian-biao-lcof](Easy\fan-zhuan-lian-biao-lcof) 
