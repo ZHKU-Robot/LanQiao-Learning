@@ -8,5 +8,7 @@ n=int(input())
 scores=[int(input()) for i in range(n)]
 qualified=[s for s in scores if s>=60]
 excellent=[s for s in scores if s>=85]
-print('{}%'.format(round(len(qualified)/len(scores))))
-print('{}%'.format(round(len(excellent)/len(scores))))
+print(qualified)
+print(excellent)
+print('{}%'.format(round(len(qualified)/len(scores)*100)))
+print('{}%'.format(round(len(excellent)/len(scores)*100)))

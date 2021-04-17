@@ -29,8 +29,10 @@ def findThePointOfIntersection(n):
         #都是平行的
         return n+1
     else:
+        #如果 只有一条是斜率不一样的
         if len(point)==1:
             return 2*n
+        #如果有一条以上斜率不一样的
         else:
             return 2*n+1
 n=int(input())

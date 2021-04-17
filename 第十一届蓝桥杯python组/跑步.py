@@ -7,9 +7,8 @@ delta1=datetime.timedelta(1)
 day=6
 for i in range(delta.days+1):
     isMon=0
-    if day%7==1:
+    if start.weekday()==0:
         isMon=1
-        day=1
     if start.day==1 or isMon:
         run+=2
     else:
