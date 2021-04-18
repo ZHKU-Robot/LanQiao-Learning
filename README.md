@@ -1,7 +1,7 @@
 
 # LanQiao-Learning
 
-小小蓝桥杯
+世上再无蓝桥杯
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](.)
 
@@ -25,6 +25,8 @@
 =======
 
 ## 更新
+- 2021年4月18日23:44:08 拿到省一吃屎
+    - 难得我怀疑人生
 - 2021年4月17日20:49:28 最后一次更新
     - 么么哒
 - 2021年4月16日14:12:46 更一更回溯 
